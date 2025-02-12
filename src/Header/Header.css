@@ -1,0 +1,92 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa; /* Màu nền cho header */
+  }
+  
+  .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .menu-toggle {
+    display: none; /* Ẩn nút trên màn hình lớn */
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 20px; /* Khoảng cách giữa các mục */
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  .nav li {
+    padding: 10px 15px; /* Điều chỉnh khoảng cách giữa các mục */
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #007bff; /* Màu cho các liên kết */
+  }
+  
+  .nav a:hover {
+    text-decoration: underline; /* Hiệu ứng khi hover */
+  }
+  
+  .cta {
+    margin-left: auto; /* Đẩy nút CTA sang bên phải */
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    background-color: #28a745; /* Màu nền cho nút CTA */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .cta-button:hover {
+    background-color: #218838; /* Màu khi hover */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block; /* Hiện nút trên màn hình nhỏ */
+    }
+  
+    .nav {
+        display: none; /* Ẩn menu trên màn hình nhỏ */
+        flex-direction: column; /* Xếp dọc */
+        position: absolute; /* Đặt menu ở vị trí tuyệt đối */
+        top: 60px; /* Đặt vị trí dưới biểu tượng hamburger */
+        left: 0;
+        width: 100%; /* Đảm bảo menu chiếm toàn bộ chiều rộng */
+        background-color: #f8f9fa; /* Nền cho menu */
+        border: 1px solid #ddd; /* Đường viền cho menu */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng */
+    }
+  
+    .nav.open {
+      display: flex; /* Hiện menu khi mở */
+    }
+  
+    .nav ul {
+      flex-direction: column; /* Xếp dọc */
+      width: 100%;
+    }
+  
+    .nav li {
+      padding: 10px 0; /* Khoảng cách giữa các mục */
+    }
+  }
