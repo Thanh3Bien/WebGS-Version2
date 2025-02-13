@@ -1,0 +1,33 @@
+.teacher-list {
+    width: 100%; /* Chiếm 25% chiều rộng */
+    padding: 20px;
+    background-color: #f8f9fa; /* Nền cho sidebar */
+    border-right: 1px solid #ddd; /* Đường viền bên phải */
+  }
+  
+  .teacher-list h2 {
+    margin-top: 0; /* Bỏ margin trên tiêu đề */
+  }
+  
+  .teacher-list ul {
+    list-style: none; /* Bỏ dấu chấm mặc định */
+    padding: 0;
+  }
+  
+  .teacher-list li {
+    padding: 10px;
+    cursor: pointer;
+    position: relative; /* Để có thể sử dụng pseudo-element */
+  }
+  
+  .teacher-list li::before {
+    content: '';
+    width: 10px; /* Kích thước của dấu chấm */
+    height: 10px; /* Kích thước của dấu chấm */
+    background-color: red; /* Màu đỏ cho dấu chấm */
+    border-radius: 2px; /* Tạo hình vuông */
+    position: absolute; /* Đặt vị trí tuyệt đối */
+    left: -20px; /* Đưa dấu chấm sang bên trái */
+    top: 50%; /* Căn giữa theo chiều dọc */
+    transform: translateY(-50%); /* Căn giữa hoàn hảo */
+  }

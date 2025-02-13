@@ -1,27 +1,38 @@
 import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
 import Header from './Header/Header';
+import ParentList from './Components/ParentList/Parent';
+import TeacherList from './Components/TeacherList/Teacher';
+import Home from './Components/HomePage/Home'
+import ParentKnow from './Components/ParentListContent/ParentKnow/ParentKnow';
 
-function App() {
+const App = () => {
+  const [activePage, setActivePage] = useState('home'); // Trạng thái để theo dõi trang hiện tại
+
+  const handleListClick = (id) => {
+    if (id === 3) {
+      setActivePage('parentKnow'); // Chuyển sang trang ParentKnow
+    } else {
+      setActivePage('home'); // Quay lại trang Home cho các ID khác
+    }
+  };
+
   return (
     <div className="App">
       <Header />
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
+      <div className="container">
+        <div className="sidebar">
+          <ParentList handleListClick={handleListClick} />
+          <TeacherList handleListClick={handleListClick} /> {/* Thêm TeacherList */}
+        </div>
+        <div className="content">
+          {activePage === 'home' && <Home />}
+          {activePage === 'parentKnow' && <ParentKnow />}
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default App;

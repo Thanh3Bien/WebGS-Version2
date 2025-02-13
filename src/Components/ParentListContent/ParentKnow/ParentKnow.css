@@ -1,0 +1,12 @@
+.parent-know {
+    width: 100%; /* Chiếm 75% chiều rộng */
+    padding: 20px;
+  }
+  
+  .parent-know h1 {
+    margin-top: 0; /* Bỏ margin trên tiêu đề */
+  }
+  
+  .parent-know p {
+    margin: 10px 0; /* Khoảng cách giữa các đoạn văn */
+  }
