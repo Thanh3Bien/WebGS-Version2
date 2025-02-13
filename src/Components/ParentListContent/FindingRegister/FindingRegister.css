@@ -1,0 +1,69 @@
+.containers {
+    width: 100%;
+    background-color: #f3f4f6; /* Màu nền nhẹ cho toàn bộ form */
+    display: flex;
+    justify-content: center; /* Căn giữa nội dung */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    padding: 40px 20px; /* Thêm padding cho không gian thoải mái */
+    min-height: 100vh; /* Chiều cao tối thiểu cho màn hình đầy đủ */
+  }
+  
+  form {
+    background-color: #ffffff; /* Màu nền trắng cho form */
+    border-radius: 8px; /* Bo góc cho form */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ cho form */
+    padding: 30px; /* Padding cho nội dung form */
+    width: 100%;
+    max-width: 600px; /* Chiều rộng tối đa cho form */
+    margin: 0 auto;
+  }
+  
+  h2 {
+    color: #333; /* Màu chữ tiêu đề */
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+  }
+  
+  
+  
+  label {
+    display: inline-flex; /* Sử dụng flex để căn chỉnh label và input trên cùng một dòng */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-bottom: 20px; /* Khoảng cách dưới label */
+    font-weight: 600; /* Đậm chữ cho label */
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="number"] {
+    width: 50%; /* Chiều rộng của ô nhập liệu */
+    padding: 10px; /* Padding cho ô nhập liệu */
+    border: 1px solid #ccc; /* Đường viền ô nhập liệu */
+    border-radius: 4px; /* Bo góc cho ô nhập liệu */
+    transition: border-color 0.3s; /* Hiệu ứng chuyển màu viền */
+    margin-left: 10px; /* Khoảng cách giữa label và input */
+    margin-bottom: 20px;
+}
+  
+  button {
+    background-color: #007bff; /* Màu nền cho nút */
+    color: #fff; /* Màu chữ cho nút */
+    border: none; /* Bỏ đường viền cho nút */
+    padding: 10px 20px; /* Padding cho nút */
+    border-radius: 5px; /* Bo góc cho nút */
+    font-weight: bold; /* Đậm chữ cho nút */
+    cursor: pointer; /* Con trỏ khi di chuột qua nút */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Màu nền khi hover qua nút */
+  }
+  
+  p {
+    margin: 0; /* Bỏ khoảng cách mặc định cho p */
+  }
+  
+  .text-success {
+    color: #28a745; /* Màu chữ cho thông báo thành công */
+    font-weight: bold; /* Đậm chữ cho thông báo */
+  }
