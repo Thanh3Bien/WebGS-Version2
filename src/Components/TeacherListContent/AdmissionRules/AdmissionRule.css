@@ -1,13 +1,13 @@
-.introduce-container {
+.rule-container {
     max-width: 800px; /* Giới hạn chiều rộng của container */
     margin: 0 auto; 
     padding: 20px; /* Khoảng cách bên trong */
     font-family: Arial, sans-serif; /* Phông chữ */
     line-height: 1.6; /* Tăng khoảng cách giữa các dòng */
-    text-align: start;
+    text-align: start; /* Căn trái nội dung */
   }
   
-  .introduce-title {
+  .rule-title {
     font-size: 24px; /* Kích thước chữ */
     font-weight: bold; /* Đậm chữ */
     text-align: center; /* Căn giữa tiêu đề */
@@ -15,4 +15,23 @@
     margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
     border-bottom: 2px solid #007bff; /* Đường viền dưới tiêu đề */
     padding-bottom: 10px; /* Khoảng cách dưới chữ */
+  }
+
+  li ul {
+    list-style-type: none; /* Bỏ dấu chấm mặc định cho toàn bộ ul */
+    padding-left: 0; /* Bỏ padding cho ul */
+  }
+  
+  li ul {
+    list-style-type: disc; /* Dấu chấm đầu dòng cho li */
+    padding-left: 20px; /* Thụt vào 20px cho các mục */
+    margin-bottom: 10px; /* Khoảng cách giữa các mục */
+  }
+  
+  
+  footer {
+    text-align: center; /* Căn giữa footer */
+    margin-top: 20px; /* Khoảng cách trên footer */
+    font-size: 14px; /* Kích thước chữ nhỏ hơn */
+    color: #666; /* Màu sắc chữ footer */
   }

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false); // Trạng thái mở/xuống
 
@@ -10,6 +11,8 @@ const Header = () => {
   };
 
   return (
+
+      
     <header className="header">
       <div className="logo">
         <a href="/">Logo</a>
@@ -22,7 +25,7 @@ const Header = () => {
         <ul>
           <li><a href="/">TRANG CHỦ</a></li>
           <li><a href="/lop-day-hien-co">LỚP DẠY HIỆN CÓ</a></li>
-          <li><a href="/gioi-thieu-giao-vien-sinh-vien">GIỚI THIỆU GIÁO VIÊN - SINH VIÊN</a></li>
+          <li><a href="/gia-su-hien-co">GIỚI THIỆU GIÁO VIÊN - SINH VIÊN</a></li>
           <li><a href="/tuyen-dung-gia-su-gioi">TUYỂN DỤNG GIA SƯ GIỎI</a></li>
           <li><Link to="/lien-he">LIÊN HỆ</Link></li>
         </ul>
@@ -31,6 +34,8 @@ const Header = () => {
         <a href="/dang-ky" className="cta-button">Đăng ký ngay</a>
       </div> */}
     </header>
+    
+    
   );
 };
 
