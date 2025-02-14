@@ -32,9 +32,6 @@
     transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
   }
   
-  .custom-button:hover {
-    background-color: #0056b3; /* Màu nền khi di chuột qua nút */
-  }
   
   /* Media query để ẩn sidebar trên màn hình nhỏ */
   @media (max-width: 768px) {

@@ -1,9 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; 
-import './SideBar.css'; // Tạo file CSS riêng cho Sidebar
+import styles from './SideBar.css'; // Tạo file CSS riêng cho Sidebar
+import { Carousel } from 'react-responsive-carousel'; 
+import img from "../../assets/ec45042a-9053-4270-9532-f57dd49ed206.jpg";
+import img2 from "../../assets/b2965456-931d-42a4-bbb0-453dbc12e292.jpg";
+
 
 const Sidebar = () => {
+
   return (
+    
     <div className="side-container">
       <div className="left-container">
         <div className="custom-sidebar">DÀNH CHO <br/>PHỤ HUYNH - HỌC SINH</div>
@@ -11,6 +17,8 @@ const Sidebar = () => {
         <div className="custom-sidebar">LIÊN HỆ TÌM GIA SƯ<br/>00000</div>
         <button className="custom-button-sidebar">Nhấn vào đây</button>
       </div>
+
+      
       
       <div className="right-container">
         <div className="custom-sidebar">DÀNH CHO <br/>GIÁO VIÊN - SINH VIÊN</div>
@@ -19,6 +27,8 @@ const Sidebar = () => {
         <button className="custom-button-sidebar">Nhấn vào đây</button>
       </div>
     </div>
+
+    
   );
 };
 
