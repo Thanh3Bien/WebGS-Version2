@@ -1,13 +1,13 @@
 import React from 'react';
 import './Teacher.css';
+import { Link } from 'react-router-dom';
 
-const TeacherList = ({ handleListClick }) => {
+const TeacherList = () => {
   const listItems = [
-    { id: 1, title: 'Hướng dẫn giảng dạy' },
-    { id: 2, title: 'Tài nguyên giảng dạy' },
-    { id: 3, title: 'Kỹ năng giao tiếp với phụ huynh' },
-    { id: 4, title: 'Đánh giá học sinh' },
-    { id: 5, title: 'Phát triển chuyên môn' },
+    { id: 1, title: 'Đăng ký làm gia sư', path: '/dang-ky-lam-gia-su' },
+    { id: 2, title: 'Lớp dạy hiện có', path: '/lop-day-hien-co' },
+    { id: 3, title: 'Nội quy nhận lớp', path: '/noi-quy-nhan-lop' },
+    { id: 4, title: 'Tuyển dụng', path: '/tuyen-dung' },
   ];
 
   return (
@@ -15,8 +15,9 @@ const TeacherList = ({ handleListClick }) => {
       <h2>Dành cho giáo viên</h2>
       <ul>
         {listItems.map(item => (
-          <li key={item.id} onClick={() => handleListClick(item.id)}>
-            {item.title}
+          <li key={item.id}>
+            <span className="bullet"></span>
+            <Link to={item.path}>{item.title}</Link>
           </li>
         ))}
       </ul>

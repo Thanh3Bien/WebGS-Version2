@@ -1,5 +1,6 @@
 import React from 'react';
 import './Parent.css';
+import { Link } from 'react-router-dom';
 
 const ParentList = ({ handleListClick }) => {
   const listItems = [
@@ -13,12 +14,19 @@ const ParentList = ({ handleListClick }) => {
   return (
     <div className="parent-list">
       <h2>Dành cho phụ huynh</h2>
-      <ul>
-        {listItems.map(item => (
-          <li key={item.id} onClick={() => handleListClick(item.id)}>
-            {item.title}
+        <ul>
+          <li>
+            <span className="bullet"></span>
+            <Link to="/finding-register">Đăng Ký Tìm Gia Sư</Link> 
           </li>
-        ))}
+          <li>
+            <span className="bullet"></span>
+            <Link to="/parent-know">Phụ huynh cần biết</Link>
+          </li>
+          <li>
+            <span className="bullet"></span>
+            <Link to="/fee">Học phí tham khảo</Link>
+          </li>
       </ul>
     </div>
   );

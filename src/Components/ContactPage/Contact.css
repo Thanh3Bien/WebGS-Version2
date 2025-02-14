@@ -1,0 +1,45 @@
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px; /* Giới hạn chiều rộng của container */
+    margin: 0 auto; /* Căn giữa container */
+    padding: 20px; /* Khoảng cách bên trong */
+    font-family: Arial, sans-serif; /* Phông chữ */
+  }
+  
+
+  
+  .contact-table {
+    width: 100%; /* Chiều rộng 100% */
+    border-collapse: collapse; /* Gộp viền của các ô */
+  }
+  
+  .contact-table th,
+  .contact-table td {
+    border: 1px solid #ddd; /* Viền cho các ô */
+    padding: 12px; /* Khoảng cách bên trong các ô */
+    text-align: left; /* Căn trái nội dung */
+  }
+  
+  .contact-table th {
+    background-color: #f4f4f4; /* Màu nền cho tiêu đề bảng */
+    color: #333; /* Màu chữ cho tiêu đề bảng */
+  }
+  
+  .contact-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Màu nền cho các hàng chẵn */
+  }
+  
+  .contact-table tr:hover {
+    background-color: #f1f1f1; /* Màu nền cho hàng khi hover */
+  }
+  
+  .contact-table td a {
+    color: #007bff; /* Màu link */
+    text-decoration: none; /* Bỏ gạch chân */
+  }
+  
+  .contact-table td a:hover {
+    text-decoration: underline; /* Gạch chân link khi hover */
+  }

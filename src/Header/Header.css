@@ -1,92 +1,137 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #f8f9fa; /* Màu nền cho header */
-  }
-  
-  .logo a {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    text-decoration: none;
-  }
-  
+  display: flex;
+  justify-content: space-between; /* Giữ khoảng cách giữa các phần tử */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  padding: 10px 20px;
+  background-color: #fff; /* Màu nền trắng cho header */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng */
+  position: relative; /* Để menu tuyệt đối hoạt động đúng */
+  z-index: 100; /* Đảm bảo header nằm trên các phần tử khác */
+  max-width: 1200px; /* Đặt chiều rộng tối đa cho header */
+  margin: 0 auto; /* Căn giữa header trên trang */
+  font-family: 'Merriweather', sans-serif;
+  background-color: #dff0d8;
+}
+.logo {
+  margin-right: auto; /* Đẩy logo sang bên trái */
+}
+.logo a {
+  align-items: flex-start;
+  font-size: 28px; /* Kích thước chữ lớn hơn cho logo */
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s; /* Hiệu ứng chuyển màu */
+  padding-left: 20px;
+}
+
+.logo a:hover {
+  color: #0056b3; /* Màu khi hover */
+}
+
+.menu-toggle {
+  display: none; /* Ẩn nút trên màn hình lớn */
+  font-size: 30px;
+  cursor: pointer;
+  background: none; /* Đảm bảo không có nền */
+  border: none; /* Không có đường viền */
+}
+
+.nav {
+  display: flex;
+  gap: 30px; /* Khoảng cách lớn hơn giữa các mục */
+  margin-right: auto;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  padding: 10px 15px; /* Điều chỉnh khoảng cách giữa các mục */
+  position: relative; /* Để tạo khoảng cách với đường viền */
+  border-right: 2px solid #ddd;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #007bff; /* Màu cho các liên kết */
+  transition: color 0.3s, text-shadow 0.3s; /* Hiệu ứng chuyển màu và bóng chữ */
+}
+
+.nav a:hover {
+  color: #0056b3; /* Màu khi hover */
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng chữ khi hover */
+}
+
+/* Thêm đường viền dưới mỗi mục menu */
+.nav li::after {
+  content: "";
+  display: block;
+  height: 2px; /* Độ dày đường viền */
+  background-color: #28a745; /* Màu cho đường viền */
+  width: 100%;
+  position: absolute;
+  bottom: 0; /* Đặt đường viền ở dưới cùng của mục */
+  left: 0; /* Căn trái */
+  transform: scaleX(0); /* Ẩn đường viền ban đầu */
+  transition: transform 0.3s; /* Hiệu ứng chuyển động */
+}
+
+.nav li:hover::after {
+  transform: scaleX(1); /* Hiện đường viền khi hover */
+}
+
+.cta {
+  margin-left: auto; /* Đẩy nút CTA sang bên phải */
+}
+
+.cta-button {
+  padding: 10px 20px;
+  background-color: #28a745; /* Màu nền cho nút CTA */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s; /* Hiệu ứng chuyển màu và phóng to */
+}
+
+.cta-button:hover {
+  background-color: #218838; /* Màu khi hover */
+  transform: scale(1.05); /* Phóng to khi hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
   .menu-toggle {
-    display: none; /* Ẩn nút trên màn hình lớn */
-    font-size: 30px;
-    cursor: pointer;
-  }
-  
-  .nav {
-    display: flex;
-    gap: 20px; /* Khoảng cách giữa các mục */
-  }
-  
-  .nav ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-  }
-  .nav li {
-    padding: 10px 15px; /* Điều chỉnh khoảng cách giữa các mục */
-  }
-  
-  .nav a {
-    text-decoration: none;
-    color: #007bff; /* Màu cho các liên kết */
-  }
-  
-  .nav a:hover {
-    text-decoration: underline; /* Hiệu ứng khi hover */
-  }
-  
-  .cta {
-    margin-left: auto; /* Đẩy nút CTA sang bên phải */
-  }
-  
-  .cta-button {
-    padding: 10px 20px;
-    background-color: #28a745; /* Màu nền cho nút CTA */
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  .cta-button:hover {
-    background-color: #218838; /* Màu khi hover */
-  }
-  
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .menu-toggle {
       display: block; /* Hiện nút trên màn hình nhỏ */
-    }
-  
-    .nav {
-        display: none; /* Ẩn menu trên màn hình nhỏ */
-        flex-direction: column; /* Xếp dọc */
-        position: absolute; /* Đặt menu ở vị trí tuyệt đối */
-        top: 60px; /* Đặt vị trí dưới biểu tượng hamburger */
-        left: 0;
-        width: 100%; /* Đảm bảo menu chiếm toàn bộ chiều rộng */
-        background-color: #f8f9fa; /* Nền cho menu */
-        border: 1px solid #ddd; /* Đường viền cho menu */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng */
-    }
-  
-    .nav.open {
+  }
+
+  .nav {
+      display: none; /* Ẩn menu trên màn hình nhỏ */
+      flex-direction: column; /* Xếp dọc */
+      position: absolute; /* Đặt menu ở vị trí tuyệt đối */
+      top: 60px; /* Đặt vị trí dưới biểu tượng hamburger */
+      left: 0;
+      width: 100%; /* Đảm bảo menu chiếm toàn bộ chiều rộng */
+      background-color: #f8f9fa; /* Nền cho menu */
+      border: 1px solid #ddd; /* Đường viền cho menu */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng */
+      z-index: 1000; /* Đảm bảo menu nằm trên các phần tử khác */
+  }
+
+  .nav.open {
       display: flex; /* Hiện menu khi mở */
-    }
-  
-    .nav ul {
+  }
+
+  .nav ul {
       flex-direction: column; /* Xếp dọc */
       width: 100%;
-    }
-  
-    .nav li {
-      padding: 10px 0; /* Khoảng cách giữa các mục */
-    }
   }
+
+  .nav li {
+      padding: 10px 0; /* Khoảng cách giữa các mục */
+  }
+}
