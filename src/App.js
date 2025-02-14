@@ -7,6 +7,7 @@ import Header from './Header/Header';
 import Sidebar from './Components/SideBar/SideBar';
 import ParentList from './Components/ParentList/Parent';
 import TeacherList from './Components/TeacherList/Teacher';
+import CarouselImage from './Components/CarouselImage/CarouselImage';
 //Header Tag
 import Home from './Components/HomePage/Home'
 import Contact from './Components/ContactPage/Contact';
@@ -28,6 +29,7 @@ const App = () => {
       <div className="App">
       <img src={image} alt="Header Background" className="header-image" />
         <Header />
+        <CarouselImage />
         <Sidebar/>
         <div className="container">
           <div className="sidebar">
