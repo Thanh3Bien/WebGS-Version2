@@ -29,7 +29,7 @@ const App = () => {
       <div className="App">
       <img src={image} alt="Header Background" className="header-image" />
         <Header />
-        <CarouselImage />
+        {/* <CarouselImage /> */}
         <Sidebar/>
         <div className="container">
           <div className="sidebar">

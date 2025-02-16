@@ -1,41 +1,48 @@
 .side-container {
-    display: flex; /* Sử dụng Flexbox để sắp xếp các thẻ */
-    justify-content: space-between; /* Tạo khoảng cách giữa các container */
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .left-container, .right-container {
-    display: flex;
-    flex-direction: column; /* Sắp xếp theo chiều dọc */
-    gap: 20px; /* Khoảng cách giữa các thẻ */
-    width: 20%; /* Chiếm 48% chiều rộng của container cha */
-  }
+  display: flex; /* Sử dụng Flexbox cho container */
+  justify-content: space-between; /* Căn giữa các phần tử trong container */
+  align-items: stretch;
+  align-items: flex-start; /* Căn chỉnh các sidebar và carousel ở đầu */
+  margin-top: 20px; /* Khoảng cách trên */
+  margin-bottom: 20px; /* Khoảng cách dưới */
+}
 
+.left-sidebar, .right-sidebar {
+  display: flex;
+  flex-direction: column; /* Sắp xếp theo chiều dọc */
+  gap: 20px; /* Khoảng cách giữa các thẻ */
+  width: 20%; /* Chiếm 20% chiều rộng */
+  margin-top: 20px; /* Khoảng cách trên */
+  margin-bottom: 20px; /* Khoảng cách dưới */
+}
 
-  
-  .custom-sidebar {
-    background-color: #f0f0f0; /* Màu nền cho các thẻ */
-    padding: 15px; /* Khoảng cách bên trong */
-    border: 1px solid #ccc; /* Đường viền cho các thẻ */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng cho các thẻ */
-  }
+.carousel-container {
+  width: 60%; /* Chiếm 60% chiều rộng giữa hai sidebar */
+  height: 100%;
+  margin: 0; /* Không cần margin để căn giữa */
+}
 
-  .custom-button-sidebar {
-    text-decoration: none; /* Bỏ gạch chân */
-    padding: 10px 15px; /* Khoảng cách bên trong nút */
-    background-color: #007BFF; /* Màu nền cho nút */
-    color: white; /* Màu chữ */
-    border: none; /* Không có đường viền */
-    border-radius: 5px; /* Bo góc cho nút */
-    cursor: pointer; /* Con trỏ chuột đổi khi di chuột qua nút */
-    transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+.custom-sidebar {
+  background-color: #f0f0f0; /* Màu nền cho các thẻ */
+  padding: 15px; /* Khoảng cách bên trong */
+  border: 1px solid #ccc; /* Đường viền cho các thẻ */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng cho các thẻ */
+}
+
+.custom-button-sidebar {
+  text-decoration: none; /* Bỏ gạch chân */
+  padding: 10px 15px; /* Khoảng cách bên trong nút */
+  background-color: #007BFF; /* Màu nền cho nút */
+  color: white; /* Màu chữ */
+  border: none; /* Không có đường viền */
+  border-radius: 5px; /* Bo góc cho nút */
+  cursor: pointer; /* Con trỏ chuột đổi khi di chuột qua nút */
+  transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+/* Media query để ẩn sidebar trên màn hình nhỏ */
+@media (max-width: 800px) {
+  .left-sidebar, .right-sidebar {
+    display: none; /* Ẩn sidebar khi chiều rộng nhỏ hơn 768px */
   }
-  
-  
-  /* Media query để ẩn sidebar trên màn hình nhỏ */
-  @media (max-width: 768px) {
-    .side-container {
-      display: none; /* Ẩn sidebar khi chiều rộng nhỏ hơn 768px */
-    }
-  }
+}

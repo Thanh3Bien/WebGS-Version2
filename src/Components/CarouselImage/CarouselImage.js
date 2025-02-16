@@ -8,7 +8,6 @@ import img1 from "../../assets/b2965456-931d-42a4-bbb0-453dbc12e292.jpg"
 
 const CarouselImage = () => {
   return (
-    <div className="middle-image-container">
       <div className="carousel-container">
         <Carousel showThumbs={false} infiniteLoop autoPlay>
           <div>
@@ -19,7 +18,7 @@ const CarouselImage = () => {
           </div>
         </Carousel>
       </div>
-    </div>
+
   );
 };
 

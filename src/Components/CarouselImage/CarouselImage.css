@@ -1,38 +1,31 @@
-.middle-image-container {
-    position: relative; /* Đặt vị trí tương đối */
-    z-index: 1; /* Đảm bảo carousel nằm trên các thành phần khác */
-    width: 60%; /* Chiều rộng đầy đủ */
-    margin-top: 20px; /* Điều chỉnh để đè lên khoảng trống (thay đổi giá trị nếu cần) */
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
+.carousel-container {
+  display: block;
+  width: 60%; /* Chiếm 60% chiều rộng giữa hai sidebar */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto; /* Căn giữa carousel */
+}
+
+.carousel .carousel .slide {
+  padding: 0; /* Xóa padding cho các slide */
+}
+
+.carousel .carousel .slider {
+  margin: 0; /* Xóa margin cho slider */
+}
+
+/* Ẩn nút điều hướng */
+.carousel .control-arrow {
+  display: none; /* Ẩn nút điều hướng trái và phải */
+}
+
+.carousel.status {
+  display: none; /* Ẩn phần tử status */
+}
+
+
+@media (max-width: 768px) {
   .carousel-container {
-    position: absolute; /* Đặt carousel ở vị trí tuyệt đối */
-    top: 0; /* Đặt nó ở đầu của middle-image-container */
-    left: 0;
-    width: 100%; /* Chiều rộng đầy đủ */
+    width: 100%; /* Đảm bảo carousel chiếm toàn bộ chiều rộng trên màn hình nhỏ */
   }
-  
-  .carousel .carousel-status {
-    display: none; /* Ẩn chỉ số "1 of 2" */
-  }
-  .carousel .control-arrow {
-    display: none; /* Ẩn nút điều hướng (dấu mũi tên) */
-  }
-  .carousel img {
-    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng */
-    height: auto; /* Giữ tỷ lệ khung hình */
-    border-radius: 10px; /* Bo góc cho hình ảnh nếu cần */
-  }
-  @media (max-width: 768px) {
-    .middle-image-container {
-        width: 100%;
-      margin-top: 0; /* Không đè lên khoảng trống trên điện thoại */
-    }
-  
-    .carousel-container {
-      position: relative; /* Đặt carousel ở vị trí tương đối */
-    }
-  }
-  
+}
