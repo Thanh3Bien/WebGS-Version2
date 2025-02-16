@@ -1,12 +1,80 @@
+.parent-know-title-container {
+  max-width: 800px; /* Giới hạn chiều rộng của container */
+  margin: 0 auto; 
+  padding: 20px; /* Khoảng cách bên trong */
+  font-family: Arial, sans-serif; /* Phông chữ */
+  line-height: 1.6; /* Tăng khoảng cách giữa các dòng */
+  text-align: start;
+}
+
+.parent-know-title {
+  font-size: 24px; /* Kích thước chữ */
+  font-weight: bold; /* Đậm chữ */
+  text-align: center; /* Căn giữa tiêu đề */
+  color: #333; /* Màu sắc tiêu đề */
+  margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+  border-bottom: 2px solid #007bff; /* Đường viền dưới tiêu đề */
+  padding-bottom: 10px; /* Khoảng cách dưới chữ */
+}
+.parentknow-image {
+  display: block; /* Hiển thị hình ảnh như một block để có thể căn giữa */
+  margin: 20px auto; /* Căn giữa và thêm khoảng cách trên/dưới */
+  max-width: 80%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của container */
+  height: auto; /* Giữ tỷ lệ chiều cao tự động */
+  border-radius: 8px; /* Bo góc cho hình ảnh */
+}
+
+
 .parent-know {
-    width: 100%; /* Chiếm 75% chiều rộng */
-    padding: 20px;
-  }
-  
-  .parent-know h1 {
-    margin-top: 0; /* Bỏ margin trên tiêu đề */
-  }
-  
-  .parent-know p {
-    margin: 10px 0; /* Khoảng cách giữa các đoạn văn */
-  }
+  max-width: 800px; /* Giới hạn chiều rộng của trang */
+  margin: 0 auto; /* Căn giữa trang */
+  padding: 20px; /* Khoảng cách bên trong */
+  font-family: Arial, sans-serif; /* Phông chữ */
+  line-height: 1.6; /* Tăng khoảng cách giữa các dòng */
+  color: #333; /* Màu chữ chính */
+  background-color: #f9f9f9; /* Màu nền nhẹ nhàng */
+  border-radius: 8px; /* Bo góc cho khung */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ cho khung */
+}
+
+header {
+  text-align: center; /* Căn giữa tiêu đề */
+  margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+}
+
+
+
+section {
+  margin-bottom: 20px; /* Khoảng cách giữa các section */
+}
+
+h2 {
+  color: #0056b3; /* Màu tiêu đề phụ */
+  margin-top: 20px; /* Khoảng cách trên tiêu đề phụ */
+}
+
+footer {
+  text-align: center; /* Căn giữa nội dung footer */
+  margin-top: 30px; /* Khoảng cách trên footer */
+  border-top: 1px solid #ddd; /* Đường viền trên footer */
+  padding-top: 20px; /* Khoảng cách bên trên nội dung footer */
+}
+
+footer p {
+  margin: 5px 0; /* Khoảng cách giữa các đoạn trong footer */
+}
+
+a {
+  color: #007bff; /* Màu liên kết */
+  text-decoration: none; /* Bỏ gạch chân */
+}
+
+a:hover {
+  text-decoration: underline; /* Gạch chân khi hover */
+}
+
+/* Thêm thụt đầu dòng cho các đoạn văn */
+p {
+  text-indent: 20px; /* Thụt đầu dòng 20px */
+  text-align: left; /* Căn trái cho các đoạn văn */
+}

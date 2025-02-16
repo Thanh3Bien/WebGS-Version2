@@ -1,0 +1,45 @@
+.tutoringservices-container {
+    max-width: 800px; /* Giới hạn chiều rộng của container */
+    margin: 0 auto; 
+    padding: 20px; /* Khoảng cách bên trong */
+    font-family: Arial, sans-serif; /* Phông chữ */
+    line-height: 1.6; /* Tăng khoảng cách giữa các dòng */
+    text-align: start;
+  }
+
+  .tutoring-service ul {
+    list-style-type: disc; /* Đặt dấu chấm đen trước mỗi mục */
+    padding-left: 20px; /* Khoảng cách bên trái cho danh sách */
+    text-align: left; /* Căn trái cho các mục */
+  }
+  
+  .tutoring-service li {
+    margin-bottom: 10px; /* Khoảng cách giữa các mục trong danh sách */
+  }
+
+  .tutoring-service p {
+    text-align: left; /* Căn trái cho các đoạn văn */
+    margin: 0 0 10px; /* Khoảng cách dưới cho các đoạn văn */
+  }
+  
+.tutoringservices-title {
+    font-size: 24px; /* Kích thước chữ */
+    font-weight: bold; /* Đậm chữ */
+    text-align: center; /* Căn giữa tiêu đề */
+    color: #333; /* Màu sắc tiêu đề */
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+    border-bottom: 2px solid #007bff; /* Đường viền dưới tiêu đề */
+    padding-bottom: 10px; /* Khoảng cách dưới chữ */
+  }
+  .tutoring-service footer {
+    text-align: center; 
+    margin-top: 20px; 
+    padding: 10px 0;
+    background-color: #f0f0f0;
+    width: 100%; 
+  }
+  
+  .tutoring-service footer p {
+    text-align: center;
+    margin: 0 auto; /* Bỏ khoảng cách mặc định của p */
+  }

@@ -7,7 +7,7 @@ const TeacherList = () => {
     { id: 1, title: 'Đăng ký làm gia sư', path: '/dang-ky-lam-gia-su' },
     { id: 2, title: 'Lớp dạy hiện có', path: '/lop-day-hien-co' },
     { id: 3, title: 'Nội quy nhận lớp', path: '/noi-quy-nhan-lop' },
-    { id: 4, title: 'Tuyển dụng', path: '/tuyen-dung' },
+    { id: 4, title: 'Tuyển dụng', path: '/tuyen-dung-gia-su-gioi' },
   ];
 
   return (

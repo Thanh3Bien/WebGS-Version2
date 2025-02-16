@@ -19,7 +19,7 @@
   display: none; /* Ẩn nút điều hướng trái và phải */
 }
 
-.carousel .status {
+.carousel-status {
   display: none; /* Ẩn phần tử status */
 }
 
