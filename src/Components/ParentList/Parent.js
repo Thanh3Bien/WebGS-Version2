@@ -13,13 +13,17 @@ const ParentList = ({ handleListClick }) => {
 
   return (
     <div className="parent-list">
-      <h2>Dành cho phụ huynh</h2>
+       <div className="parentlisttitle-container">
+          <h2>Dành cho phụ huynh</h2>
+        </div>
         <ul>
                 {listItems.map(item => (
+                  <Link to={item.path}>
                   <li key={item.id}>
                     <span className="bullet"></span>
-                    <Link to={item.path}>{item.title}</Link>
+                    {item.title}
                   </li>
+                  </Link>
                 ))}
               </ul>
         {/* <ul>

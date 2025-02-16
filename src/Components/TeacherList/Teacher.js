@@ -12,13 +12,18 @@ const TeacherList = () => {
 
   return (
     <div className="teacher-list">
-      <h2>Dành cho giáo viên</h2>
+      
+      <div className="teacherlisttitle-container">
+        <h2>Dành cho giáo viên</h2>
+      </div>
       <ul>
         {listItems.map(item => (
+          <Link to={item.path}>
           <li key={item.id}>
             <span className="bullet"></span>
-            <Link to={item.path}>{item.title}</Link>
+            {item.title}
           </li>
+          </Link>
         ))}
       </ul>
     </div>

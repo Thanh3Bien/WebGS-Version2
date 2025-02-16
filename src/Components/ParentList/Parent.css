@@ -1,11 +1,21 @@
 .parent-list {
   width: 100%; /* Chiếm 100% chiều rộng */
-  background-color: #f8f9fa; /* Nền cho sidebar */
+  background-color: #f0f4f8;
   border-right: 1px solid #ddd; /* Đường viền bên phải */
 }
-
+.parentlisttitle-container {
+  background-color: #de5207; /* Nền xanh nhạt cho tiêu đề */
+  padding: 1px; /* Khoảng cách bên trong */
+  border-radius: 5px; /* Bo góc cho nền tiêu đề */
+  margin-bottom: 10px; /*Khoảng cách dưới giữa tiêu đề và danh sách */
+}
 .parent-list h2 {
-  margin-top: 0; /* Bỏ margin trên tiêu đề */
+  font-size: 1.5rem;
+  margin-top: 5px; /*Bỏ margin trên tiêu đề */
+  margin-bottom: 5px;
+  padding: 1px;
+  color: #dce1e6; /* Màu xanh dịu mát, có thể thay đổi theo ý thích */
+  /* text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);  */
 }
 
 .parent-list ul {
@@ -14,29 +24,35 @@
 }
 
 .parent-list li {
-  padding: 10px;
-  cursor: pointer;
+  text-decoration: none; /* Bỏ gạch chân */
+  padding: 10px; /* Khoảng cách bên trong mỗi mục */
+  cursor: pointer; /* Thay đổi con trỏ khi hover */
   display: flex; /* Sử dụng flexbox để căn chỉnh */
   align-items: center; /* Căn giữa theo chiều dọc */
+  transition: background-color 0.3s ease; /* Hiệu ứng chuyển động cho nền */
+}
+
+.parent-list li:hover {
+  background-color: #e9ecef; /* Màu nền khi hover */
 }
 
 .parent-list li .bullet {
   width: 10px; /* Kích thước của dấu chấm */
   height: 10px; /* Kích thước của dấu chấm */
   background-color: red; /* Màu đỏ cho dấu chấm */
-  border-radius: 2px; /* Bo góc cho dấu chấm */
-  margin-left: 20px;
-  margin-right: 10px; /* Khoảng cách giữa dấu chấm và nội dung */
+  border-radius: 50%; /* Bo tròn cho dấu chấm */
+  margin-left: 20px; /* Khoảng cách bên trái dấu chấm */
+  margin-right: 10px; /* Khoảng cách bên phải dấu chấm */
 }
 
-.parent-list li a {
-  text-decoration: none; /* Bỏ gạch chân */
-  color: #333; /* Màu chữ */
-
-}
+/* .parent-list li a {
+  
+  color: #450808;
+  flex: 1; 
+} */
 
 .parent-list li a:hover {
-  background-color: #e9ecef; /* Màu nền khi hover */
+  text-decoration: none;
   color: #007bff; /* Màu chữ khi hover */
-  border-radius: 4px; /* Bo góc cho hiệu ứng hover */
+  font-weight: bold; /* In đậm khi hover */
 }
