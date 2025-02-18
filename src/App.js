@@ -26,12 +26,23 @@ import TutoringService from './Components/ParentListContent/TutoringServices/Tut
 import AdmissionRule from './Components/TeacherListContent/AdmissionRules/AdmissionRule';
 import WorkingRegister from './Components/TeacherListContent/WorkingRegister/WorkingRegister';
 
-import ImageUploader from './Components/UploadImagesComponent/UploadImage';
+//ContactSupport
+import Zalo from './Components/ZaloSupport/Zalo';
 const headerImage = "https://res.cloudinary.com/dsq0mei34/image/upload/v1739883298/nhzcrwhzvtg12q8lfcad.png";
+
 const App = () => {
   
+  useEffect(() => {
+    // Cuộn xuống vị trí mong muốn
+    const timer = setTimeout(() => {
+      window.scrollTo(0, 220);
+    }, 0);
+  
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <Router>
+      
       <div className="App">
       <img src={headerImage} alt="Header Background" className="header-image" title="Hình ảnh đầu trang cho web"/>
         {/* <ImageUploader /> */}
@@ -66,9 +77,13 @@ const App = () => {
         
       </div>
       <Footer/>
+      <Zalo/>
     </Router>
+    
   );
 };
 
 
+
 export default App;
+

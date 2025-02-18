@@ -1,0 +1,51 @@
+.zalo-support {
+    position: fixed;
+    text-align: end;
+  }
+  
+  @keyframes shake {
+    0% { transform: rotate(0deg); }
+    30% { transform: rotate(0deg); }
+    40% { transform: rotate(15deg); }
+    50% { transform: rotate(0deg); }
+    60% { transform: rotate(-15deg); }
+    70% { transform: rotate(0deg); }
+    80% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+  @media (max-width: 768px) {
+    .shake {
+      animation: shake 0.8s ease infinite;
+      animation-delay: 2s;
+    }
+  }
+  
+  .zalo-icon {
+    position: fixed;
+    bottom: 210px;
+    right: 50px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .zalo-image {
+    width: 45px;
+    height: 50px;
+  }
+  
+  .zalo-text {
+    display: none;
+    color: #007aff;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  @media (min-width: 769px) {
+    .zalo-text {
+      display: block;
+    }
+  }

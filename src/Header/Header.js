@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 
-
+const logoImg = "https://res.cloudinary.com/dsq0mei34/image/upload/v1739897878/Logo-removebg-preview_gpbrrt.png";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false); // Trạng thái mở/xuống
 
@@ -15,7 +15,9 @@ const Header = () => {
       
     <header className="header">
       <div className="logo">
-        <a href="/">Logo</a>
+      <a href="/">
+                    <img src={logoImg} alt="Logo" style={{ width: '100px', height: 'auto' }} /> {/* Thay đổi kích thước theo nhu cầu */}
+                </a>
       </div>
       <div className="menu-toggle" onClick={toggleMenu}>
       

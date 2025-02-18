@@ -1,7 +1,8 @@
 .footer {
-    background-color: #f1f1f1; /* Màu nền nhẹ nhàng */
+    background-color: #ebaa13; /* Màu nền nhẹ nhàng */
     color: #333; /* Màu chữ tối để dễ đọc */
-    padding: 40px 20px; /* Khoảng cách bên trong */
+    margin-top: 0;
+    padding: 40px 20px;
     text-align: left; /* Căn trái nội dung */
 }
 
@@ -9,7 +10,7 @@
     display: flex; /* Sử dụng flexbox để bố trí */
     justify-content: space-between; /* Đều khoảng cách giữa các phần */
     max-width: 1200px; /* Giới hạn chiều rộng */
-    margin: 0 auto; /* Căn giữa */
+    margin: 0 auto; 
 }
 
 .footer-section {
@@ -18,13 +19,14 @@
 }
 
 .footer-section h4 {
+    font-size: 1.25rem;
+    padding-left: 20px;
     margin-bottom: 15px; /* Khoảng cách dưới tiêu đề */
-    color: #007bff; /* Màu tiêu đề nhẹ nhàng hơn */
+    color: #05090c; /* Màu tiêu đề nhẹ nhàng hơn */
 }
 
-.footer-section p,
-.footer-section ul {
-    margin: 0; /* Bỏ khoảng cách mặc định */
+.footer-section p {
+    text-align: start;
 }
 
 .footer-section ul {
@@ -34,6 +36,7 @@
 
 .footer-section ul li {
     margin-bottom: 10px; /* Khoảng cách giữa các liên kết */
+    margin-left: -5px;
 }
 
 .footer-section a {
@@ -46,8 +49,13 @@
     color: #0056b3; /* Màu liên kết khi hover */
 }
 
-.footer-bottom {
+.footer-bottom p{
     text-align: center; /* Căn giữa nội dung dưới cùng */
     margin-top: 20px; /* Khoảng cách trên */
     color: #666; /* Màu chữ nhẹ cho phần dưới cùng */
+}
+@media (max-width: 768px) {
+    .footer {
+        display: none; /* Ẩn footer trên màn hình điện thoại */
+    }
 }

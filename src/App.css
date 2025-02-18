@@ -1,7 +1,7 @@
 .App {
   background-color: #f0f0f0;
   text-align: center;
-  max-width: 90%; /* Chiều rộng tối đa của ứng dụng */
+  max-width: 100%; /* Chiều rộng tối đa của ứng dụng */
   margin: 0 auto; /* Căn giữa ứng dụng trên màn hình */
 }
 
@@ -46,6 +46,7 @@
 .container {
   display: flex; /* Sử dụng flexbox để chia cột */
   overflow: hidden; /* Ngăn chặn nội dung tràn ra bên ngoài */
+  margin-bottom: auto;
 }
 
 .sidebar {
@@ -57,7 +58,7 @@
 .content {
   
   width: 80%; /* Chiếm 75% chiều rộng cho nội dung chính */
-  padding: 20px; /* Thêm padding để tạo không gian */
+  /* padding: 20px;  */
   box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng */
   border: 1px solid #ccc; /* Thêm viền với độ dày 1px, kiểu solid và màu #ccc */
 }

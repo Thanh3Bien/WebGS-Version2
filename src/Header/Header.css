@@ -1,5 +1,10 @@
 .header {
   display: flex;
+  position: fixed; /* Cố định vị trí */
+    top: 0; /* Đặt ở đầu trang */
+    left: 0; /* Căn trái */
+    right: 0; /* Căn phải */
+    z-index: 1000; /* Đảm bảo nằm trên các phần tử khác */
   justify-content: space-between; /* Giữ khoảng cách giữa các phần tử */
   align-items: center; /* Căn giữa theo chiều dọc */
   padding: 10px 20px;
