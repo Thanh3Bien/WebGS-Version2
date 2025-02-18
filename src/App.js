@@ -26,12 +26,15 @@ import TutoringService from './Components/ParentListContent/TutoringServices/Tut
 import AdmissionRule from './Components/TeacherListContent/AdmissionRules/AdmissionRule';
 import WorkingRegister from './Components/TeacherListContent/WorkingRegister/WorkingRegister';
 
+import ImageUploader from './Components/UploadImagesComponent/UploadImage';
+
 const App = () => {
   
   return (
     <Router>
       <div className="App">
       <img src={image} alt="Header Background" className="header-image" />
+        {/* <ImageUploader /> */}
         <Header />
         {/* <CarouselImage /> */}
         <Sidebar/>

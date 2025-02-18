@@ -23,6 +23,12 @@
   display: none; /* Ẩn phần tử status */
 }
 
+.carousel img {
+  width: 90%; /* Đặt chiều rộng hình ảnh 100% để vừa khung */
+  height: 300px; /* Giữ tỷ lệ khung hình */
+  /* margin-right: 10px; */
+}
+
 
 @media (max-width: 768px) {
   .carousel-container {

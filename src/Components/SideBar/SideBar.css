@@ -19,7 +19,8 @@
 .carousel-container {
   width: 60%; /* Chiếm 60% chiều rộng giữa hai sidebar */
   height: 100%;
-  margin: 0; /* Không cần margin để căn giữa */
+  margin: 0 auto; /* Không cần margin để căn giữa */
+  transform: translateX(-5px);
 }
 
 .custom-sidebar {
