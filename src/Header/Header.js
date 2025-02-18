@@ -27,7 +27,7 @@ const Header = () => {
           <li><a href="/lop-day-hien-co">LỚP DẠY HIỆN CÓ</a></li>
           <li><a href="/gia-su-hien-co">GIỚI THIỆU GIÁO VIÊN - SINH VIÊN</a></li>
           <li><a href="/tuyen-dung-gia-su-gioi">TUYỂN DỤNG GIA SƯ GIỎI</a></li>
-          <li><Link to="/lien-he">LIÊN HỆ</Link></li>
+          <li><a href="/lien-he">LIÊN HỆ</a></li>
         </ul>
       </nav>
       {/* <div className="cta">

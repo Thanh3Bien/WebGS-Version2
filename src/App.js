@@ -27,13 +27,13 @@ import AdmissionRule from './Components/TeacherListContent/AdmissionRules/Admiss
 import WorkingRegister from './Components/TeacherListContent/WorkingRegister/WorkingRegister';
 
 import ImageUploader from './Components/UploadImagesComponent/UploadImage';
-
+const headerImage = "https://res.cloudinary.com/dsq0mei34/image/upload/v1739883298/nhzcrwhzvtg12q8lfcad.png";
 const App = () => {
   
   return (
     <Router>
       <div className="App">
-      <img src={image} alt="Header Background" className="header-image" />
+      <img src={headerImage} alt="Header Background" className="header-image" title="Hình ảnh đầu trang cho web"/>
         {/* <ImageUploader /> */}
         <Header />
         {/* <CarouselImage /> */}

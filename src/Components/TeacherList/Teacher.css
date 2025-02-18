@@ -5,17 +5,18 @@
 }
 
 .teacherlisttitle-container {
-  background-color: #de5207; /* Nền cho tiêu đề */
+  
+  background-color: #ebaa13; /* Nền cho tiêu đề */
   padding: 1px; /* Khoảng cách bên trong */
-  border-radius: 5px; /* Bo góc cho nền tiêu đề */
+  border-radius: 2px; /* Bo góc cho nền tiêu đề */
   margin-bottom: 10px; /*Khoảng cách giữa tiêu đề và danh sách */
 }
 
 .teacher-list h2 {
-  font-size: 1.5rem; /* Kích thước tiêu đề */
+  font-size: 1.25rem; /* Kích thước tiêu đề */
   margin-top: 5px; /*Bỏ margin trên tiêu đề */
   margin-bottom: 5px;
-  color: #dce1e6; /* Màu chữ tiêu đề */
+  color: #020507; /* Màu chữ tiêu đề */
   text-align: center; /* Căn giữa tiêu đề */
 }
 
@@ -25,6 +26,7 @@
 }
 
 .teacher-list li {
+  color: #02070c;
   text-decoration: none; /* Bỏ gạch chân */
   padding: 10px; /* Khoảng cách bên trong mỗi mục */
   cursor: pointer; /* Thay đổi con trỏ khi hover */
@@ -35,6 +37,7 @@
 
 .teacher-list li:hover {
   background-color: #e9ecef; /* Màu nền khi hover */
+  text-decoration: none;
 }
 
 .teacher-list li .bullet {
@@ -46,10 +49,13 @@
   margin-right: 10px; /* Khoảng cách bên phải dấu chấm */
 }
 
-
-
-.teacher-list li a:hover {
-  text-decoration: none; /* Đảm bảo không có gạch chân khi hover */
-  color: #007bff; /* Màu chữ khi hover */
-  font-weight: bold; /* In đậm khi hover */
+.teacher-list a:hover {
+  text-decoration: none; /* Bỏ gạch chân khi hover */
+  color: #02070c; 
+  font-weight: bold;
 }
+
+/* .teacher-list li a:hover {
+  color: #007bff;
+  font-weight: bold; 
+} */

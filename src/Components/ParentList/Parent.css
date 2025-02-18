@@ -4,17 +4,17 @@
   border-right: 1px solid #ddd; /* Đường viền bên phải */
 }
 .parentlisttitle-container {
-  background-color: #de5207; /* Nền xanh nhạt cho tiêu đề */
+  background-color: #ebaa13; /* Nền xanh nhạt cho tiêu đề */
   padding: 1px; /* Khoảng cách bên trong */
-  border-radius: 5px; /* Bo góc cho nền tiêu đề */
+  border-radius: 2px; /* Bo góc cho nền tiêu đề */
   margin-bottom: 10px; /*Khoảng cách dưới giữa tiêu đề và danh sách */
 }
 .parent-list h2 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin-top: 5px; /*Bỏ margin trên tiêu đề */
   margin-bottom: 5px;
   padding: 1px;
-  color: #dce1e6; /* Màu xanh dịu mát, có thể thay đổi theo ý thích */
+  color: #020507; /* Màu xanh dịu mát, có thể thay đổi theo ý thích */
   /* text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);  */
 }
 
@@ -24,6 +24,7 @@
 }
 
 .parent-list li {
+  color: #02070c;
   text-decoration: none; /* Bỏ gạch chân */
   padding: 10px; /* Khoảng cách bên trong mỗi mục */
   cursor: pointer; /* Thay đổi con trỏ khi hover */
@@ -34,6 +35,7 @@
 
 .parent-list li:hover {
   background-color: #e9ecef; /* Màu nền khi hover */
+  text-decoration: none;
 }
 
 .parent-list li .bullet {
@@ -51,8 +53,8 @@
   flex: 1; 
 } */
 
-.parent-list li a:hover {
+.parent-list a:hover {
   text-decoration: none;
-  color: #007bff; /* Màu chữ khi hover */
-  font-weight: bold; /* In đậm khi hover */
+  color: #02070c; 
+  font-weight: bold; 
 }

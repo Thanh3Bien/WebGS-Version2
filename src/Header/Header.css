@@ -7,10 +7,10 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng */
   position: relative; /* Để menu tuyệt đối hoạt động đúng */
   z-index: 100; /* Đảm bảo header nằm trên các phần tử khác */
-  max-width: 1200px; /* Đặt chiều rộng tối đa cho header */
+  max-width: 1500px; /* Đặt chiều rộng tối đa cho header */
   margin: 0 auto; /* Căn giữa header trên trang */
   font-family: 'Merriweather', sans-serif;
-  background-color: #dff0d8;
+  background-color: #ebaa13;
 }
 .logo {
   margin-right: auto; /* Đẩy logo sang bên trái */
@@ -58,12 +58,14 @@
 
 .nav a {
   text-decoration: none;
-  color: #007bff; /* Màu cho các liên kết */
+  font-weight: bold;
+  color: #01060a; /* Màu cho các liên kết */
   transition: color 0.3s, text-shadow 0.3s; /* Hiệu ứng chuyển màu và bóng chữ */
 }
 
 .nav a:hover {
-  color: #0056b3; /* Màu khi hover */
+  text-decoration: none;
+  color: #de5207; /* Màu khi hover */
   text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng chữ khi hover */
 }
 
@@ -72,7 +74,7 @@
   content: "";
   display: block;
   height: 2px; /* Độ dày đường viền */
-  background-color: #28a745; /* Màu cho đường viền */
+  background-color: #de5207; /* Màu cho đường viền */
   width: 100%;
   position: absolute;
   bottom: 0; /* Đặt đường viền ở dưới cùng của mục */
@@ -91,7 +93,7 @@
 
 .cta-button {
   padding: 10px 20px;
-  background-color: #28a745; /* Màu nền cho nút CTA */
+  background-color: #de5207; /* Màu nền cho nút CTA */
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -99,7 +101,8 @@
 }
 
 .cta-button:hover {
-  background-color: #218838; /* Màu khi hover */
+  text-decoration: none;
+  background-color: #de5207; /* Màu khi hover */
   transform: scale(1.05); /* Phóng to khi hover */
 }
 
@@ -110,13 +113,14 @@
   }
 
   .nav {
+
       display: none; /* Ẩn menu trên màn hình nhỏ */
       flex-direction: column; /* Xếp dọc */
       position: absolute; /* Đặt menu ở vị trí tuyệt đối */
       top: 60px; /* Đặt vị trí dưới biểu tượng hamburger */
       left: 0;
       width: 100%; /* Đảm bảo menu chiếm toàn bộ chiều rộng */
-      background-color: #f8f9fa; /* Nền cho menu */
+      background-color: #ebb944; /* Nền cho menu */
       border: 1px solid #ddd; /* Đường viền cho menu */
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng */
       z-index: 1000; /* Đảm bảo menu nằm trên các phần tử khác */
@@ -132,6 +136,7 @@
   }
 
   .nav li {
+      text-align: center;
       padding: 10px 0; /* Khoảng cách giữa các mục */
   }
 }
