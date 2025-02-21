@@ -43,6 +43,7 @@ const App = () => {
     <Router>
       
       <div className="App">
+      <h1 className="">TRUNG TÂM GIA SƯ BIÊN HÒA</h1>
       <img src={headerImage} alt="Header Background" className="header-image" title="Hình ảnh đầu trang cho web"/>
         {/* <ImageUploader /> */}
         <Header />

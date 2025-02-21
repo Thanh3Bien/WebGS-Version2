@@ -3,8 +3,9 @@ import './Contact.css'
 
 const Contact = () => {
   return (
+    
     <div className="contact-container">
-      {/* <h3>Liên Hệ</h3> */}
+      <h1>Liên Hệ</h1>
       <table className="contact-table">
         <thead>
           <tr>

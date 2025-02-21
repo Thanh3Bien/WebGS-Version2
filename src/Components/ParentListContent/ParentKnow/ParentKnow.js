@@ -5,9 +5,9 @@ const img = "https://res.cloudinary.com/dsq0mei34/image/upload/v1740161240/GIA_S
 const ParentKnow = () => {
   return (
     <div className="parent-know">
-      <div className="parent-know-title-container">
+      <h1 className="parent-know-title-container">
         <div className="parent-know-title">PHỤ HUYNH CẦN BIẾT</div>
-      </div>
+      </h1>
       <img src={img} alt="Phu huynh can biet" className="parentknow-image" />
       {/* <header> */}
         <h2>Quý phụ huynh học sinh thân mến!</h2>

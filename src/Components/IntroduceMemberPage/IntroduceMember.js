@@ -3,9 +3,9 @@ import './IntroduceMember.css';
 
 const IntroduceMember = () => {
     return (
-      <div className="introduce-container">
+      <h1 className="introduce-container">
         <div className="introduce-title">GIA SƯ HIỆN CÓ</div>
-      </div>
+      </h1>
     );
   };
   

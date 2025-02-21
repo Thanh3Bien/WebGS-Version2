@@ -14,11 +14,13 @@ const Header = () => {
 
       
     <header className="header">
+      {/* <h1 className="">TRUNG TÂM GIA SƯ BIÊN HÒA</h1> */}
       <div className="logo">
       <a href="/">
                     <img src={logoImg} alt="Logo" style={{ width: '100px', height: 'auto' }} /> {/* Thay đổi kích thước theo nhu cầu */}
                 </a>
       </div>
+      
       <div className="menu-toggle" onClick={toggleMenu}>
       
         ☰ {/* Biểu tượng hamburger */}

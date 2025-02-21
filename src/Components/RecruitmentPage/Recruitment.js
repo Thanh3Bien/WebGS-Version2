@@ -5,7 +5,7 @@ import './Recruitment.css';
 const Recruitment = () => {
     return (
         <div className="existing-class-container">
-            <div className="existing-class-title">TUYỂN DỤNG</div>
+            <h1 className="existing-class-title">TUYỂN DỤNG</h1>
             <div className="recruitment-content">
                 {/* <p>Gia sư Tài Năng Biên Hòa</p>
                 <h3>Tuyển dụng</h3> */}
