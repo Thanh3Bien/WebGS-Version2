@@ -1,15 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; 
+import { Link} from 'react-router-dom'; 
 import './SideBar.css'; // Sử dụng file CSS chung cho cả hai sidebar
 import CarouselImage from '../CarouselImage/CarouselImage';
 
 const LeftSidebar = () => {
+  
   return (
     <div className="left-sidebar">
       <div className="custom-sidebar">DÀNH CHO <br/>PHỤ HUYNH - HỌC SINH</div>
       <Link to="/finding-register" className="custom-button-sidebar">Đăng ký tìm gia sư</Link>
       <div className="custom-sidebar">LIÊN HỆ TÌM GIA SƯ<br/>0393687033</div>
-      <Link to="/finding-register" className="custom-button-sidebar">Liên hệ ngay</Link>
+      <a href="https://zalo.me/0393687033" className="custom-button-sidebar" target="_blank" rel="noopener noreferrer">
+  Liên hệ ngay
+</a>
     </div>
   );
 };

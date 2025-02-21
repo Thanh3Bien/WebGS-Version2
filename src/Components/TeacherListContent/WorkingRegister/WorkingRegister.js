@@ -12,7 +12,7 @@ export default function WorkingRegister() {
     emailjs
       .sendForm(
         "service_0ozdlpn",
-        "template_e31o7ld",
+        "template_a23kdg6",
         form.current,
         "sRe_wqnmfOrvSIi0Q"
       )

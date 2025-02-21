@@ -46,9 +46,9 @@ const TutoringService = () => {
           Giáo viên, sinh viên thường xuyên báo cáo kết quả học tập của học sinh định kỳ hàng tuần, hàng tháng.
         </p>
         
-        <h3>B. Học Tại Trung Tâm</h3>
+        <h3>B. Học Online</h3>
         <p>
-          Trung tâm thường xuyên tổ chức thi sắp lớp hàng tuần, phân loại học sinh để xếp vào lớp phù hợp.
+        Trung tâm thường xuyên tổ chức các buổi học trực tuyến, giúp học sinh có thể học tập linh hoạt tại nhà.
         </p>
         <ul>
           <li>Lớp cơ bản: dành cho học sinh có năng lực trung bình và yếu.</li>
@@ -63,7 +63,7 @@ const TutoringService = () => {
       </section>
 
       <section>
-        <h2>Gia Sư Tài Năng Biên Hòa Cam Kết Chất Lượng</h2>
+        <h2>Trung tâm Gia Sư Biên Hòa Cam Kết</h2>
         <ul>
           <li>Sự tiến bộ của học sinh là tiêu chí để trung tâm tồn tại và phát triển.</li>
           <li>Học thử 1 tuần để cảm nhận phương pháp giảng dạy của giáo viên. Được đổi giáo viên miễn phí.</li>
@@ -76,7 +76,7 @@ const TutoringService = () => {
       </section>
 
       <footer>
-        <p>Trung tâm gia sư. Liên hệ hotline: 000000000</p>
+        <p>Trung tâm gia sư Biên Hòa. Liên hệ hotline: 0393687033</p>
       </footer>
     </div>
   );

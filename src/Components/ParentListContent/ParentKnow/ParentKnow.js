@@ -1,7 +1,7 @@
 import React from 'react';
 import './ParentKnow.css';
-import img from "../../../assets/phuhuynhcanbiet.png";
-
+// import img from "../../../assets/phuhuynhcanbiet.png";
+const img = "https://res.cloudinary.com/dsq0mei34/image/upload/v1740161240/GIA_S%C6%AFcontentofpage_e4qiuw.png";
 const ParentKnow = () => {
   return (
     <div className="parent-know">
@@ -18,7 +18,7 @@ const ParentKnow = () => {
           Nhiều năm trong lĩnh vực dạy kèm và cũng là bậc cha mẹ. Nên chúng tôi luôn luôn thấu hiểu nổi trăn trở của quý phụ huynh. Làm sao để cho con chúng ta có một tương lai tươi sáng và thành đạt trong cuộc sống?
         </p>
         <p>
-          Gia sư Tài Năng Biên Hòa thấu hiểu được nguyện vọng đó. Tuy nhiên để làm được điều đó, ngoài yếu tố các em chăm chỉ, học giỏi thì trong đó, khâu định hướng của phụ huynh học sinh để "ươm mầm tài năng"; xây dựng nền tảng cho con em từ bước ban đầu là rất quan trọng.
+          Trung tâm Gia Sư Biên Hòa thấu hiểu được nguyện vọng đó. Tuy nhiên để làm được điều đó, ngoài yếu tố các em chăm chỉ, học giỏi thì trong đó, khâu định hướng của phụ huynh học sinh để "ươm mầm tài năng"; xây dựng nền tảng cho con em từ bước ban đầu là rất quan trọng.
         </p>
       </section>
 
@@ -35,7 +35,7 @@ const ParentKnow = () => {
       <section>
         <h2>Phương Châm</h2>
         <p>
-          Gia sư Biên Hòa với phương châm Tận Tâm – Uy Tín – Chất Lượng. Gia sư Biên Hòa mang sứ mệnh giúp đỡ cho các em học sinh nhanh chóng tiến bộ trở thành tài năng nước nhà; tăng thu nhập cho các em sinh viên, thầy cô yêu thích giảng dạy.
+          Gia sư Biên Hòa với phương châm An Tâm – Uy Tín – Chất Lượng. Gia sư Biên Hòa mang sứ mệnh giúp đỡ cho các em học sinh nhanh chóng tiến bộ trở thành tài năng nước nhà; tăng thu nhập cho các em sinh viên, thầy cô yêu thích giảng dạy.
         </p>
         <p>
           Chúng tôi luôn bám sát thực tế các bài giảng của giáo viên trên lớp. Cho các em thực hành ngay bài tập về nhà, củng cố kiến thức cũng như theo dõi sự tiến bộ của các em. Thường xuyên báo cáo kết quả học tập, trao đổi với phụ huynh cách hướng dẫn học sinh ôn bài và làm bài.
@@ -48,10 +48,10 @@ const ParentKnow = () => {
           Đến với Trung Tâm Gia Sư Biên Hòa, quý phụ huynh, học sinh được "HỌC THỬ MIỄN PHÍ 1 TUẦN" trước khi đăng ký học chính thức.
         </p>
         <p>
-          Thưa quý phụ huynh học sinh thân mến! Gia sư "Tài Năng" cái tên nói lên tất cả. Chúng tôi cam kết giúp các em mau tiến bộ; khai thác đào tạo được thế mạnh cũng như lợi thế tiềm ẩn của các em để trở thành Tài Năng của nước nhà.
+          Thưa quý phụ huynh học sinh thân mến! Gia sư "Tâm Tín" cái tên nói lên tất cả. Chúng tôi cam kết giúp các em mau tiến bộ; khai thác đào tạo được thế mạnh cũng như lợi thế tiềm ẩn của các em bằng cả cái "Tâm" và chữ "Tín" của mình.
         </p>
         <p>
-          Một lần nữa chúng tôi luôn tự hào với nhiều năm kinh nghiệm hoạt động trong vấn đề giảng dạy. Hơn 5000 phụ huynh đã chọn và 98% hài lòng. Chúng tôi xin khẳng định khi quyết định lựa chọn "Trung Tâm Gia Sư Tài Năng" Biên Hòa, phụ huynh có thể an tâm là một nơi uy tín, và là điểm đến lý tưởng để gởi gắm con em mình.
+          Một lần nữa chúng tôi luôn tự hào với nhiều năm kinh nghiệm hoạt động trong vấn đề giảng dạy. Hơn 5000 phụ huynh đã chọn và 98% hài lòng. Chúng tôi xin khẳng định khi quyết định lựa chọn Trung Tâm Gia Sư Biên Hòa, phụ huynh có thể an tâm là một nơi uy tín, và là điểm đến lý tưởng để gởi gắm con em mình.
         </p>
       </section>
 
@@ -59,9 +59,9 @@ const ParentKnow = () => {
         <p>Đội Ngũ Trung Tâm Gia Sư Biên Hòa xin chúc gia đình Mạnh Khỏe – Hạnh Phúc – Thành Công trong cuộc sống.</p>
         <p>Mọi chi tiết quý phụ huynh, học sinh vui lòng liên hệ:</p>
         <p>Trung Tâm Gia Sư Biên Hòa</p>
-        <p>Điện thoại: 0939.418.939</p>
-        <p>Website: <a href="http://giasutainang.edu.vn/">http://giasutainang.edu.vn/</a></p>
-        <p>Trân trọng cám ơn.</p>
+        <p>Điện thoại: 0393.687.033</p>
+        <p>Website: <a href=""></a></p>
+        <p>Trân trọng cảm ơn.</p>
       </footer>
     </div>
   );

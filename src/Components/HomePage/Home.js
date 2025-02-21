@@ -4,12 +4,12 @@ import './Home.css';
 const Home = () => {
   return (
     <div className="home">
-      <h2>Gia sư Biên Hòa - Trung tâm gia sư uy tín</h2>
+      <h1>Gia sư Biên Hòa - Trung tâm gia sư uy tín</h1>
 
       <h3>- Gia sư Biên Hòa có đạo đức, tác phong chuẩn mực:</h3>
       <ul>
         <li>+ Tiên học lễ, hậu học văn: Gia sư là người trực tiếp giảng dạy, truyền đạt kiến thức, kỹ năng trong cuộc sống cho học sinh.</li>
-        <li>+ Gia sư tốt phải người thầy tận tâm, có trách nhiệm.</li>
+        <li>+ Gia sư tốt phải là người thầy tận tâm, có trách nhiệm.</li>
       </ul>
 
       <h3>- Gia sư giỏi phải có phương pháp giảng dạy phù hợp:</h3>
@@ -59,10 +59,10 @@ const Home = () => {
 
       <h4 className="contact-title">Quý phụ huynh cần tư vấn thêm, vui lòng liên hệ:</h4>
       <p className="contact-info">
-        Trung tâm Gia sư Tài Năng Biên Hòa
+        Trung tâm Gia sư Biên Hòa
       </p>
       <p className="contact-info">
-        Điện thoại: 0982.418.939 (24/7)
+        Điện thoại: 0393.687.033 (24/7)
       </p>
       <p className="contact-info">
         Website: <a href="http://giasutainang.edu.vn/">http://giasutainang.edu.vn/</a>

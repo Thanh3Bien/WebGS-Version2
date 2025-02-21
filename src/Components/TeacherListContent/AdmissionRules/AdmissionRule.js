@@ -6,10 +6,10 @@ const AdmissionRule = () => {
     <div className="rule-container">
       <div className="rule-title">NỘI QUY NHẬN LỚP</div>
       <p>
-        Gia sư Tài Năng – VP. Gia Sư Biên Hòa
+        Gia sư Tâm Tín - Văn phòng gia sư Biên Hòa
       </p>
       <ul>
-        <li><b>Gia sư chọn lớp dạy tại địa chỉ web:</b> <a href="http://giasutainang.edu.vn/lop-day-hien-co/">Okfine</a></li>
+        <li><b>Gia sư chọn lớp dạy tại địa chỉ web:</b> <a href=""></a></li>
         <li>
           Gia sư trước khi nhận lớp cần phải nghiên cứu kỹ:
           <ul>
@@ -55,7 +55,7 @@ const AdmissionRule = () => {
         Trung tâm luôn lắng nghe và chia sẻ, cam kết mang lại sự hài lòng cho quý phụ huynh học sinh, cũng như sự tin tưởng từ phía giáo viên, sinh viên.
       </p>
       <footer>
-        <p>&copy; Gia sư Tài Năng Biên Hòa - Tất cả quyền lợi được bảo lưu.</p>
+        <p>&copy; Gia sư Tâm Tín Biên Hòa - Tất cả quyền lợi được bảo lưu.</p>
       </footer>
     </div>
   );

@@ -15,9 +15,9 @@ const Footer = () => {
             <div className="footer-content">
                 <div className="footer-section">
                     <h4>Liên hệ</h4>
-                    <p>Trung tâm Gia Sư Tài Năng Biên Hòa</p>
-                    <p>Điện thoại: 0982.418.939</p>
-                    <p>Email: info@giasutainang.edu.vn</p>
+                    <p>Trung tâm Gia Sư Tâm Tín Biên Hòa</p>
+                    <p>Điện thoại: 0393.687.033</p>
+                    <p>Email: giasubienhoa42@gmail.com</p>
                 </div>
                 <div className="footer-section">
                     <h4>Dịch vụ</h4>
@@ -55,7 +55,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footer-bottom">
-                <p>© 2025 Gia sư Tài Năng Biên Hòa - All Rights Reserved.</p>
+                <p>© 2025 Gia sư Tâm Tín Biên Hòa - All Rights Reserved.</p>
             </div>
         </footer>
     );
