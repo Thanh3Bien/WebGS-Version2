@@ -6,55 +6,55 @@ const Home = () => {
     <div className="home">
       <h1>Gia sư Biên Hòa - Trung tâm gia sư uy tín</h1>
 
-      <h3>- Gia sư Biên Hòa có đạo đức, tác phong chuẩn mực:</h3>
+      <h3>Gia sư Biên Hòa: Đạo đức và Tác phong Chuẩn mực</h3>
       <ul>
-        <li>+ Tiên học lễ, hậu học văn: Gia sư là người trực tiếp giảng dạy, truyền đạt kiến thức, kỹ năng trong cuộc sống cho học sinh.</li>
-        <li>+ Gia sư tốt phải là người thầy tận tâm, có trách nhiệm.</li>
+        <li>+ Tiên học lễ, hậu học văn: Gia sư không chỉ là người truyền đạt kiến thức mà còn là tấm gương đạo đức cho học sinh.</li>
+        <li>+ Gia sư tận tâm và có trách nhiệm: Một gia sư giỏi không chỉ dạy học mà còn chăm sóc và hướng dẫn học sinh.</li>
       </ul>
 
-      <h3>- Gia sư giỏi phải có phương pháp giảng dạy phù hợp:</h3>
+      <h3>Phương pháp giảng dạy phù hợp</h3>
       <ul>
-        <li>+ Học lực cũng như khả năng tiếp thu của mỗi học sinh là khác nhau. Không thể áp dụng một phương pháp cho nhiều đối tượng học sinh. Cần phải tổ chức kiểm tra phân loại học sinh về kiến thức, khả năng tiếp thu, khả năng ghi nhớ...</li>
-        <li>+ Gia sư Biên Hòa luôn có giáo án giảng dạy riêng.</li>
+        <li>+ Sự khác biệt trong học lực và khả năng tiếp thu: Mỗi học sinh có một cách học riêng, do đó không thể áp dụng chung một phương pháp giảng dạy. Cần có sự đánh giá để phân loại học sinh theo kiến thức và khả năng tiếp thu.</li>
+        <li>+ Giáo án riêng biệt: Gia sư Biên Hòa luôn chuẩn bị giáo án giảng dạy phù hợp với từng học sinh.</li>
       </ul>
 
-      <h3 style={{ fontSize: '1.5em', fontWeight: 'bold' }}>- Học thử miễn phí một tuần:</h3>
+      <h3 style={{ fontSize: '1.5em', fontWeight: 'bold' }}>Học Thử Miễn Phí</h3>
       <ul>
-        <li>+ Trung tâm cam kết mang lại sự hài lòng cho học sinh, quý phụ huynh.</li>
+        <li>+ Cam kết sự hài lòng: Trung tâm cam kết mang lại trải nghiệm tốt nhất cho học sinh và phụ huynh, đảm bảo không thu phí cho dịch vụ không đạt yêu cầu.</li>
         <li>+ Quý phụ huynh không phải trả phí cho một dịch vụ giảng dạy không chất lượng.</li>
       </ul>
 
-      <h3>- Hỗ trợ trong suốt quá trình học tập:</h3>
+      <h3>Hỗ Trợ Liên Tục trong Quá Trình Học</h3>
       <p>
-        Trung tâm luôn hỗ trợ song song cùng với gia sư trực tiếp giảng dạy. Hỗ trợ kiến thức chuyên môn, giáo án, phương pháp học tập.
+      Hỗ trợ song hành: Trung tâm luôn đồng hành cùng gia sư, cung cấp kiến thức chuyên môn, giáo án và phương pháp học tập hiệu quả.
       </p>
 
-      <h3>- Dịch vụ dạy kèm tại nhà:</h3>
+      <h3>Dịch Vụ Dạy Kèm Tại Nhà</h3>
       <p>
-        Nhiều năm trong lĩnh vực dạy kèm, Trung tâm gia sư Biên Hòa cam kết mang lại sự hài lòng cho phụ huynh, học sinh.
+      Kinh nghiệm lâu năm: Với nhiều năm hoạt động trong lĩnh vực dạy kèm, Trung tâm gia sư Biên Hòa cam kết mang lại sự hài lòng tối đa cho học sinh và phụ huynh.
       </p>
       <ul>
-        <li>+ Tổ chức thi, phân loại học sinh, phương pháp giảng dạy phù hợp.</li>
-        <li>+ Luôn bám sát chương trình học ở trường, củng cố và nâng cao kiến thức.</li>
-        <li>+ Rèn luyện các kỹ năng làm bài viết, bài thi trắc nghiệm...</li>
-        <li>+ Gia sư Biên Hòa dạy kèm có giáo án dạy riêng, được hỗ trợ từ giáo án soạn sẵn của các thầy cô nhiều năm kinh nghiệm của trung tâm.</li>
+        <li>+ Tổ chức thi và phân loại học sinh: Đảm bảo phương pháp giảng dạy phù hợp với từng đối tượng.</li>
+        <li>+ Bám sát chương trình học: Củng cố và nâng cao kiến thức cho học sinh.</li>
+        <li>+ Rèn luyện kỹ năng làm bài: Giúp học sinh phát triển kỹ năng viết và làm bài thi trắc nghiệm.</li>
+        <li>+ Giáo án chuyên biệt: Gia sư Biên Hòa soạn giáo án riêng, được hỗ trợ từ tài liệu của các giáo viên có nhiều kinh nghiệm.</li>
       </ul>
 
-      <h3>- Đội ngũ gia sư Tận tâm - Uy tín - Chất Lượng:</h3>
+      <h3>Đội Ngũ Gia Sư Chất Lượng</h3>
       <ul>
-        <li>+ Giáo viên trực tiếp đứng lớp các trường học trên địa bàn thành phố Biên Hòa, Đồng Nai.</li>
-        <li>+ Giảng viên trường đại học, cao đẳng.</li>
-        <li>+ Sinh viên giỏi, có kinh nghiệm dạy kèm từ hai năm trở lên.</li>
-        <li>+ Thường xuyên kiểm tra, báo kết quả học tập đến phụ huynh.</li>
-        <li>+ Cam kết giúp học sinh tiến bộ trong một tháng.</li>
+        <li>+ Giáo viên từ các trường học: Đội ngũ gia sư gồm giáo viên đang giảng dạy tại các trường ở Biên Hòa, Đồng Nai.</li>
+        <li>+ Giảng viên đại học và cao đẳng: Đội ngũ giảng viên có kinh nghiệm và chuyên môn cao.</li>
+        <li>+ Sinh viên giỏi: Có kinh nghiệm dạy kèm từ hai năm trở lên.</li>
+        <li>+ Theo dõi kết quả học tập: Thường xuyên báo cáo kết quả học tập cho phụ huynh.</li>
+        <li>+ Cam kết tiến bộ: Đảm bảo học sinh sẽ thấy sự tiến bộ trong vòng một tháng.</li>
       </ul>
 
       <h3>- Gia sư Biên Hòa nhận dạy kèm:</h3>
       <ul>
-        <li>+ Từ lớp 1 đến lớp 12, luyện thi lớp 9 lên 10, thi tốt nghiệp, đại học.</li>
-        <li>+ Nhận dạy anh văn thiếu nhi, anh văn giao tiếp, tiếng Nga, tiếng Hàn,... luyện thi TOEIC.</li>
-        <li>+ Nhận dạy tin học văn phòng, đồ họa.</li>
-        <li>+ Nhận dạy các môn năng khiếu khác như vẽ, đàn nhạc...</li>
+        <li>+ Từ lớp 1 đến lớp 12: Bao gồm luyện thi vào lớp 10, thi tốt nghiệp và đại học.</li>
+        <li>+ Dạy tiếng Anh: Chuyên dạy tiếng Anh cho trẻ em, giao tiếp, luyện thi TOEIC, cũng như các ngôn ngữ khác như tiếng Nga và tiếng Hàn.</li>
+        <li>+ Tin học văn phòng</li>
+        <li>+ Nhận dạy các môn năng khiếu khác như vẽ, đàn nhạc, rèn chữ... </li>
       </ul>
 
       <h4 className="contact-title">Quý phụ huynh cần tư vấn thêm, vui lòng liên hệ:</h4>

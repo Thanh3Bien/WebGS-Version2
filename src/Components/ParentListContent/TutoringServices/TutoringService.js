@@ -12,24 +12,24 @@ const TutoringService = () => {
         <div className="tutoringservices-title">DỊCH VỤ DẠY KÈM</div>
       </div>
         <p>
-          Nhận dạy kèm từ lớp 1 đến lớp 12 tất cả các môn như Toán, Lý, Hóa, Văn, Anh, Sử, Địa, Nhạc, Đàn, Vẽ… tại nhà trên khắp TP. Biên Hòa, Đồng Nai. Đội ngũ gia sư chịu khó, tận tâm, yêu nghề, không ngại đường xa.
+        Chúng tôi cung cấp dịch vụ dạy kèm cho học sinh từ lớp 1 đến lớp 12, bao gồm tất cả các môn học như Toán, Lý, Hóa, Văn, Anh, Sử, Địa, Nhạc, Đàn, Vẽ… tại nhà trên toàn địa bàn TP. Biên Hòa, Đồng Nai. Đội ngũ gia sư của chúng tôi là những người tận tâm, yêu nghề và không ngại di chuyển xa.
         </p>
         <p>
-          Thường xuyên khai giảng các lớp tại trung tâm và tại nhà học sinh mỗi ngày, mỗi tuần.
+        Chúng tôi thường xuyên tổ chức các lớp học tại trung tâm cũng như tại nhà học sinh mỗi ngày và mỗi tuần.
         </p>
         <p>
-          Hàng tháng, mở các lớp ôn thi đầu cấp (lớp 5 lên 6, lớp 9 lên 10, và ôn thi tốt nghiệp, đại học) do các giáo viên giỏi nhiều năm giảng dạy.
+        Hàng tháng, trung tâm mở các lớp ôn tập cho những kỳ thi đầu cấp và ôn thi tốt nghiệp, đại học, do các giáo viên có kinh nghiệm giảng dạy lâu năm. 
         </p>
       </section>
 
       <section>
         <h2>Chương Trình Dạy Kèm</h2>
         <ul>
-          <li>Luôn bám sát chương trình của Bộ Giáo Dục & Đào Tạo.</li>
-          <li>Kèm sát theo sổ báo bài của học sinh.</li>
-          <li>Giúp học sinh yếu kém nhanh chóng lấy lại kiến thức, rèn luyện kỹ năng làm bài.</li>
-          <li>Nâng cao kiến thức cho học sinh khá giỏi, hướng dẫn học sinh giải bằng nhiều phương pháp, rèn luyện khả năng tư duy.</li>
-          <li>Luyện thi Violympic, ôn thi vào trường chuyên, ôn thi cấp thành phố cho học sinh giỏi.</li>
+          <li>Chương trình học luôn bám sát theo quy định của Bộ Giáo Dục & Đào Tạo.</li>
+          <li>Theo dõi sát sao sổ báo bài của học sinh.</li>
+          <li>Hỗ trợ học sinh yếu kém nhanh chóng củng cố kiến thức và rèn luyện kỹ năng làm bài.</li>
+          <li>Nâng cao kiến thức cho học sinh khá giỏi, hướng dẫn giải bài bằng nhiều phương pháp và rèn luyện tư duy.</li>
+          <li>Luyện thi Violympic, ôn thi vào trường chuyên và ôn thi cấp thành phố cho học sinh xuất sắc.</li>
         </ul>
       </section>
 
@@ -37,13 +37,13 @@ const TutoringService = () => {
         <h2>Hình Thức Học Tập</h2>
         <h3>A. Học Tại Nhà</h3>
         <p>
-          Giáo viên, sinh viên đến trực tiếp nhà để kiểm tra học lực của học sinh, từ đó lập giáo án giảng dạy phù hợp với học sinh, tư vấn cho học sinh, phụ huynh phương pháp giảng dạy, học tập tại nhà.
+        Gia sư sẽ đến tận nhà để đánh giá trình độ học lực của học sinh, từ đó lập giáo án phù hợp và tư vấn cho học sinh cũng như phụ huynh về phương pháp học tập tại nhà.
         </p>
         <p>
-          Tùy vào năng lực của học sinh, giáo viên tư vấn chọn khối thi, trường thi hợp lý.
+        Dựa vào năng lực của học sinh, gia sư sẽ tư vấn lựa chọn khối thi và trường thi hợp lý.
         </p>
         <p>
-          Giáo viên, sinh viên thường xuyên báo cáo kết quả học tập của học sinh định kỳ hàng tuần, hàng tháng.
+        Gia sư sẽ thường xuyên báo cáo kết quả học tập của học sinh định kỳ hàng tuần và hàng tháng.
         </p>
         
         <h3>B. Học Online</h3>
@@ -65,13 +65,13 @@ const TutoringService = () => {
       <section>
         <h2>Trung tâm Gia Sư Biên Hòa Cam Kết</h2>
         <ul>
-          <li>Sự tiến bộ của học sinh là tiêu chí để trung tâm tồn tại và phát triển.</li>
-          <li>Học thử 1 tuần để cảm nhận phương pháp giảng dạy của giáo viên. Được đổi giáo viên miễn phí.</li>
-          <li>Trung tâm và gia sư phối hợp kiểm tra học lực, theo dõi kết quả học tập của học sinh hàng tuần hàng tháng.</li>
-          <li>Trung tâm hỗ trợ gia sư kiến thức chuyên môn trong suốt quá trình giảng dạy.</li>
-          <li>Gia sư là những người có đạo đức tốt, có tác phong nghề nghiệp nhà giáo.</li>
-          <li>Cam kết giúp học sinh tiến bộ sau một tháng.</li>
-          <li>Phụ huynh chỉ phải đóng phí khi hài lòng về gia sư giảng dạy.</li>
+          <li>Sự tiến bộ của học sinh là tiêu chí sống còn để trung tâm phát triển.</li>
+          <li>Học thử trong 1 tuần để trải nghiệm phương pháp giảng dạy của gia sư. Học sinh có thể đổi gia sư miễn phí nếu không hài lòng.</li>
+          <li>Trung tâm phối hợp với gia sư để kiểm tra học lực và theo dõi kết quả học tập của học sinh hàng tuần, hàng tháng.</li>
+          <li>Chúng tôi hỗ trợ gia sư kiến thức chuyên môn trong suốt quá trình giảng dạy.</li>
+          <li>Gia sư đều là những người có đạo đức tốt và phong cách nghề nghiệp chuẩn mực.</li>
+          <li>Cam kết giúp học sinh tiến bộ trong vòng một tháng.</li>
+          <li>Phụ huynh chỉ cần thanh toán phí khi hoàn toàn hài lòng với chất lượng giảng dạy của gia sư.</li>
         </ul>
       </section>
 
