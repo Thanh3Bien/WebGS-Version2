@@ -8,9 +8,9 @@ const TutoringService = () => {
         <h1>Dịch Vụ Dạy Kèm Tại Biên Hòa - Đồng Nai</h1>
       </header> */}
       <section>
-      <h1 className="tutoringservices-container">
+      <div className="tutoringservices-container">
         <div className="tutoringservices-title">DỊCH VỤ DẠY KÈM</div>
-      </h1>
+      </div>
         <p>
         Chúng tôi cung cấp dịch vụ dạy kèm cho học sinh từ lớp 1 đến lớp 12, bao gồm tất cả các môn học như Toán, Lý, Hóa, Văn, Anh, Sử, Địa, Nhạc, Đàn, Vẽ… tại nhà trên toàn địa bàn TP. Biên Hòa, Đồng Nai. Đội ngũ gia sư của chúng tôi là những người tận tâm, yêu nghề và không ngại di chuyển xa.
         </p>

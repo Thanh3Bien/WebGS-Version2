@@ -39,9 +39,9 @@ export default function Register({ showHeader = true }) {
           onSubmit={sendEmail}
           ref={form}
         >
-          <h1 className="text-2xl font-bold text-left mb-6 text-[#333] -mt-4">
+          <h2 className="text-2xl font-bold text-left mb-6 text-[#333] -mt-4">
             Form Đăng Kí Học Gia Sư Cho Học Sinh
-          </h1>
+          </h2>
 
           {/* Thông tin học sinh */}
           <h3 className="text-xl font-semibold mb-4">Thông tin học sinh</h3>

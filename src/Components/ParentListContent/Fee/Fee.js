@@ -4,7 +4,7 @@ import './Fee.css'; // Tạo file CSS riêng để định dạng
 const Fee = () => {
   return (
     <div className="fee-container">
-      <h1 className="fee-title">HỌC PHÍ THAM KHẢO</h1>
+      <div className="fee-title">HỌC PHÍ THAM KHẢO</div>
       <p>
         Trung tâm Gia Sư Biên Hòa xin gửi đến quý phụ huynh, học sinh bảng học phí tham khảo.
       </p>

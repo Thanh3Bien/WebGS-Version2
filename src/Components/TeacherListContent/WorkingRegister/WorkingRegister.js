@@ -35,9 +35,9 @@ export default function WorkingRegister() {
         onSubmit={sendEmail}
         ref={form}
       >
-        <h1 className="text-2xl font-bold text-left mb-6 text-[#333] -mt-4">
+        <h2 className="text-2xl font-bold text-left mb-6 text-[#333] -mt-4">
           Đăng Ký Làm Gia Sư
-        </h1>
+        </h2>
 
         {/* Thông tin cá nhân */}
         <h3 className="text-xl font-semibold mb-4">Thông tin cá nhân</h3>
