@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
 import './App.css';
 import Header from './Header/Header';
-import Sidebar from './Components/SideBar/SideBar'; 
+import Sidebar from './Components/SideBar/SideBar';
 import Footer from './Footer/Footer';
 import ParentList from './Components/ParentList/Parent';
 import TeacherList from './Components/TeacherList/Teacher';
@@ -30,20 +30,20 @@ import Zalo from './Components/ZaloSupport/Zalo';
 const headerImage = "https://res.cloudinary.com/dsq0mei34/image/upload/v1739883298/nhzcrwhzvtg12q8lfcad.png";
 
 const App = () => {
-  
+
   useEffect(() => {
     // Cuộn xuống vị trí mong muốn
     const timer = setTimeout(() => {
       window.scrollTo(0, 220);
     }, 0);
-  
+
     return () => clearTimeout(timer);
   }, []);
   return (
     <Router>
-      
+
       <div className="App">
-      <h1 className="">TRUNG TÂM GIA SƯ BIÊN HÒA</h1>
+      {/* <h1 className="">TRUNG TÂM GIA SƯ BIÊN HÒA</h1> */}
       <img src={headerImage} alt="Header Background" className="header-image" title="Hình ảnh đầu trang cho web"/>
         {/* <ImageUploader /> */}
         <Header />
@@ -74,12 +74,12 @@ const App = () => {
             </Routes>
           </div>
         </div>
-        
+
       </div>
       <Footer/>
       <Zalo/>
     </Router>
-    
+
   );
 };
 
