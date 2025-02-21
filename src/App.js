@@ -2,7 +2,6 @@ import logo from './logo.svg';
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
 import './App.css';
-import image from '../src/assets/ec45042a-9053-4270-9532-f57dd49ed206.jpg';
 import Header from './Header/Header';
 import Sidebar from './Components/SideBar/SideBar'; 
 import Footer from './Footer/Footer';

@@ -67,3 +67,18 @@ input[type="number"] {
     color: #28a745; /* Màu chữ cho thông báo thành công */
     font-weight: bold; /* Đậm chữ cho thông báo */
   }
+
+  /* Responsive styles */
+@media (max-width: 768px) {
+  form {
+      width: 90%;
+      padding: 20px; /* Thay đổi padding cho form trên màn hình nhỏ */
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="number"],
+  button {
+      width: 70%; /* Đảm bảo ô nhập liệu và nút chiếm toàn bộ chiều rộng */
+  }
+}
