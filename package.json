@@ -2,6 +2,7 @@
   "name": "webgiasu-version2",
   "version": "0.1.0",
   "private": true,
+  
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "autoprefixer": "^10.4.20",

@@ -18,8 +18,8 @@ const TeacherList = () => {
       </div>
       <ul>
         {listItems.map(item => (
-          <Link to={item.path}>
-          <li key={item.id}>
+          <Link to={item.path} key={item.id}>
+          <li>
             <span className="bullet"></span>
             {item.title}
           </li>
