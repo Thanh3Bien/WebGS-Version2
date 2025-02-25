@@ -23,7 +23,7 @@
   padding: 0;
 }
 
-.parent-list li {
+.parent-list li a{
   color: #02070c;
   text-decoration: none; /* Bỏ gạch chân */
   padding: 10px; /* Khoảng cách bên trong mỗi mục */

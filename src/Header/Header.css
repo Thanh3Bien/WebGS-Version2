@@ -19,7 +19,10 @@
   background-color: #ebaa13;
 }
 .logo {
-  margin-right: auto; /* Đẩy logo sang bên trái */
+  flex: 0 1 auto;
+  display: flex;
+  justify-content: center; /* Căn giữa logo */
+  margin: 0 auto;
 }
 .logo a {
   align-items: flex-start;
@@ -67,6 +70,7 @@
   font-weight: bold;
   color: #01060a; /* Màu cho các liên kết */
   font-size: 18px;
+  cursor: pointer;
   transition: color 0.3s, text-shadow 0.3s; /* Hiệu ứng chuyển màu và bóng chữ */
 }
 
@@ -117,6 +121,8 @@
 @media (max-width: 768px) {
   .menu-toggle {
       display: block; /* Hiện nút trên màn hình nhỏ */
+      order: -1; /* Đặt nút menu trước logo */
+      margin-left: 0; /* Đặt lại khoảng cách cho nút menu */
   }
 
   .nav {

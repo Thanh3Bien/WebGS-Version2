@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState  } from 'react';
 import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
 import './App.css';
 import Header from './Header/Header';
@@ -39,6 +39,14 @@ const App = () => {
 
     return () => clearTimeout(timer);
   }, []);
+  const [activeSection, setActiveSection] = useState('home');
+  const handleNavClick = (section) => {
+    setActiveSection(section);
+  };
+  const handleListClick = (section) => {
+    setActiveSection(section);
+  };
+
   return (
     <Router>
 
@@ -46,26 +54,63 @@ const App = () => {
       {/* <h1 className="">TRUNG TÂM GIA SƯ BIÊN HÒA</h1> */}
       <img src={headerImage} alt="Header Background" className="header-image" title="Hình ảnh đầu trang cho web"/>
         {/* <ImageUploader /> */}
-        <Header />
+        <Header  onNavClick={handleNavClick}/>
         {/* <CarouselImage /> */}
         <Sidebar/>
         <div className="container">
           <div className="sidebar">
-            <ParentList />
-            <TeacherList />
+            <ParentList onListClick={handleListClick} />
+            <TeacherList onListClick={handleListClick}/>
           </div>
           <div className="content">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/gia-su-hien-co" element={<Introduce />} />
-              <Route path="/lien-he" element={<Contact />} />
-              <Route path="/lop-day-hien-co" element={<ExistingClass />} />
-              <Route path="/tuyen-dung-gia-su-gioi" element={<Recruitment />} />
+          <section id="home">
+              {activeSection === 'home' && <Home />}
+            </section>
+            <section id="lop-day-hien-co">
+              {activeSection === 'lop-day-hien-co' && <ExistingClass />}
+            </section>
+            <section id="gia-su-hien-co">
+              {activeSection === 'gia-su-hien-co' && <Introduce />}
+            </section>
+            <section id="tuyen-dung-gia-su-gioi">
+              {activeSection === 'tuyen-dung-gia-su-gioi' && <Recruitment />}
+            </section>
+            <section id="lien-he">
+              {activeSection === 'lien-he' && <Contact />}
+            </section>
 
-              <Route path="/parent-know" element={<ParentKnow />} />
+
+            <section id="finding-register">
+              {activeSection === 'finding-register' && <FindingRegister />}
+            </section>
+            <section id="parent-know">
+              {activeSection === 'parent-know' && <ParentKnow />}
+            </section>
+            <section id="dich-vu-day-kem">
+              {activeSection === 'dich-vu-day-kem' && <TutoringService />}
+            </section>
+            <section id="fee">
+              {activeSection === 'fee' && <Fee />}
+            </section>
+
+
+            <section id="noi-quy-nhan-lop">
+              {activeSection === 'noi-quy-nhan-lop' && <AdmissionRule />}
+            </section>
+            <section id="dang-ky-lam-gia-su">
+              {activeSection === 'dang-ky-lam-gia-su' && <WorkingRegister />}
+            </section>
+            <Routes>
+              {/* <Route path="/" element={<Home />} /> */}
+              {/* <Route path="/gia-su-hien-co" element={<Introduce />} /> */}
+              {/* <Route path="/lien-he" element={<Contact />} /> */}
+              {/* <Route path="/lop-day-hien-co" element={<ExistingClass />} /> */}
+              {/* <Route path="/tuyen-dung-gia-su-gioi" element={<Recruitment />} /> */}
+
+              {/* <Route path="/parent-know" element={<ParentKnow />} />
               <Route path="/finding-register" element={<FindingRegister />} />
               <Route path="/dich-vu-day-kem" element={<TutoringService />} />
-              <Route path="/fee" element={<Fee />} />
+              <Route path="/fee" element={<Fee />} /> */}
 
 
 

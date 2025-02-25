@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, animateScroll as scroll } from 'react-scroll';
 import './Header.css';
 
 const logoImg = "https://res.cloudinary.com/dsq0mei34/image/upload/v1739897878/Logo-removebg-preview_gpbrrt.png";
-const Header = () => {
+
+const Header = ( { onNavClick }) => {
   const [isOpen, setIsOpen] = useState(false); // Trạng thái mở/xuống
 
   const toggleMenu = () => {
@@ -11,35 +12,36 @@ const Header = () => {
   };
 
   return (
-
-      
     <header className="header">
-      {/* <h1 className="">TRUNG TÂM GIA SƯ BIÊN HÒA</h1> */}
       <div className="logo">
-      <a href="/">
-                    <img src={logoImg} alt="Logo" style={{ width: '100px', height: 'auto' }} /> {/* Thay đổi kích thước theo nhu cầu */}
-                </a>
+        <a href="home">
+          <img src={logoImg} alt="Logo" style={{ width: '100px', height: 'auto' }} />
+        </a>
       </div>
       
       <div className="menu-toggle" onClick={toggleMenu}>
-      
         ☰ {/* Biểu tượng hamburger */}
       </div>
       <nav className={`nav ${isOpen ? 'open' : ''}`}>
         <ul>
-          <li><a href="/">TRANG CHỦ</a></li>
-          <li><a href="/lop-day-hien-co">LỚP DẠY HIỆN CÓ</a></li>
-          <li><a href="/gia-su-hien-co">GIỚI THIỆU GIÁO VIÊN - SINH VIÊN</a></li>
-          <li><a href="/tuyen-dung-gia-su-gioi">TUYỂN DỤNG GIA SƯ GIỎI</a></li>
-          <li><a href="/lien-he">LIÊN HỆ</a></li>
+          <li>
+            <Link to="home" smooth={true} duration={500} onClick={() => onNavClick('home')}>TRANG CHỦ</Link>
+          </li>
+          <li>
+            <Link to="lop-day-hien-co" smooth={true} duration={500} onClick={() => onNavClick('lop-day-hien-co')}>LỚP DẠY HIỆN CÓ</Link>
+          </li>
+          <li>
+            <Link to="gia-su-hien-co" smooth={true} duration={500} onClick={() => onNavClick('gia-su-hien-co')}>GIỚI THIỆU GIÁO VIÊN - SINH VIÊN</Link>
+          </li>
+          <li>
+            <Link to="tuyen-dung-gia-su-gioi" smooth={true} duration={500} onClick={() => onNavClick('tuyen-dung-gia-su-gioi')}>TUYỂN DỤNG GIA SƯ GIỎI</Link>
+          </li>
+          <li>
+            <Link to="lien-he" smooth={true} duration={500} onClick={() => onNavClick('lien-he')}>LIÊN HỆ</Link>
+          </li>
         </ul>
       </nav>
-      {/* <div className="cta">
-        <a href="/dang-ky" className="cta-button">Đăng ký ngay</a>
-      </div> */}
     </header>
-    
-    
   );
 };
 
