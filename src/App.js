@@ -23,10 +23,14 @@ const headerImage = "https://res.cloudinary.com/dsq0mei34/image/upload/v17398832
 
 const App = () => {
   useEffect(() => {
-    // Cuộn xuống vị trí mong muốn
-    window.scrollTo(200, 0);
+    const timer = setTimeout(() => {
+      window.scrollTo(0, 220);
+    }, 0); // Trì hoãn 100ms
+  
+    return () => clearTimeout(timer);
   }, []);
 
+  
   const [activeSection, setActiveSection] = useState('home');
 
   const handleNavClick = (section) => {
