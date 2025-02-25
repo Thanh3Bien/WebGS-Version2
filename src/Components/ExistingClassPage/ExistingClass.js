@@ -1,4 +1,3 @@
-// src/ExistingClass.js
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './ExistingClass.css';
@@ -10,11 +9,26 @@ const ExistingClass = () => {
 
     useEffect(() => {
         const fetchClassData = async () => {
+            setLoading(true); // Đặt loading về true khi bắt đầu lấy dữ liệu
             try {
                 const response = await axios.get('https://webgsapi.azurewebsites.net/api/Classes');
-                setClassData(response.data); // Nếu response.data là một mảng, bạn có thể sử dụng [0] để lấy phần tử đầu tiên
+                
+                // Kiểm tra nếu response.data là một mảng
+                if (Array.isArray(response.data) && response.data.length > 0) {
+                    setClassData(response.data[0]); // Lấy phần tử đầu tiên
+                } else {
+                    setError('Không có dữ liệu lớp học');
+                }
             } catch (err) {
-                setError('Có lỗi xảy ra khi tải dữ liệu');
+                // Ghi lại lỗi chi tiết trong console
+                console.error('Error fetching class data:', err);
+                
+                // Cập nhật thông báo lỗi
+                if (axios.isAxiosError(err)) {
+                    setError(err.response?.data?.ErrorMessage || 'Có lỗi xảy ra khi tải dữ liệu');
+                } else {
+                    setError('Có lỗi xảy ra: ' + err.message);
+                }
             } finally {
                 setLoading(false);
             }
