@@ -18,6 +18,7 @@ import TutoringService from './Components/ParentListContent/TutoringServices/Tut
 import AdmissionRule from './Components/TeacherListContent/AdmissionRules/AdmissionRule';
 import WorkingRegister from './Components/TeacherListContent/WorkingRegister/WorkingRegister';
 import Zalo from './Components/ZaloSupport/Zalo';
+import PhoneContact from './Components/PhoneContact/PhoneContact';
 
 const headerImage = "https://res.cloudinary.com/dsq0mei34/image/upload/v1739883298/nhzcrwhzvtg12q8lfcad.png";
 
@@ -101,6 +102,7 @@ const App = () => {
         </div>
         <Footer />
         <Zalo />
+        <PhoneContact />
       </div>
     
     </Router>
