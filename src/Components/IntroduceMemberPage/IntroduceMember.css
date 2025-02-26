@@ -72,3 +72,9 @@
   background-color: #ccc; /* Màu nền khi không thể nhấn */
   cursor: not-allowed; /* Không thể nhấn */
 }
+
+@media (max-width: 768px) {
+  .tutor-item {
+    width: 100%; 
+  }
+}

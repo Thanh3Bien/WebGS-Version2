@@ -66,10 +66,14 @@ export default function Register({ showHeader = true }) {
             </label>
             
               <label className="mr-4 cursor-pointer">
-                <input type="radio" name="gender" value="male" required /> Nam
+                <input type="radio" name="gender" value="male" 
+                // required 
+                /> Nam
               </label>
               <label className="cursor-pointer">
-                <input type="radio" name="gender" value="female" required /> Nữ
+                <input type="radio" name="gender" value="female" 
+                //required 
+                /> Nữ
               </label>
             
           </div>
@@ -81,7 +85,7 @@ export default function Register({ showHeader = true }) {
             </label>
             <input
               type="text"
-              required
+              // required
               name="school"
               className="w-full text-[#212121] bg-[#fafafa] border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
             />
@@ -109,7 +113,7 @@ export default function Register({ showHeader = true }) {
             </label>
             <input
               type="text"
-              required
+              // required
               name="subject"
               className="w-full text-[#212121] bg-[#fafafa] border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
             />
@@ -122,7 +126,7 @@ export default function Register({ showHeader = true }) {
             </label>
             <input
               type="text"
-              required
+              // required
               name="teaching_time"
               className="w-full text-[#212121] bg-[#fafafa] border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
             />
@@ -135,7 +139,7 @@ export default function Register({ showHeader = true }) {
             </label>
             <input
               type="number"
-              required
+              // required
               name="number_of_classes"
               className="w-full text-[#212121] bg-[#fafafa] border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
             />

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Recruitment.css';
 
-const Recruitment = () => {
+const Recruitment = ({ onNavClick }) => {
     return (
         <div className="existing-class-container">
             <div className="existing-class-title">TUYỂN DỤNG</div>
@@ -23,7 +23,7 @@ const Recruitment = () => {
                 {/* <p>Trung tâm Gia Sư Biên Hòa</p> */}
                 <ul>
                     <li>Trung tâm Gia Sư Biên Hòa</li>
-                    <li>Đăng kí: tại mục đăng kí làm gia sư: <Link to="/dang-ky-lam-gia-su">Đăng ký làm gia sư</Link></li>
+                    <li>Đăng kí: tại mục <strong>Đăng kí làm gia sư</strong> </li>
                     <li>Chúng tôi sẽ liên hệ và phỏng vấn</li>
                     <li>Điện Thoại: 0393.687.033 (24/7)</li>
                 </ul>

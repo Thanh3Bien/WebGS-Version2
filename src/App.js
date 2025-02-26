@@ -35,10 +35,20 @@ const App = () => {
 
   const handleNavClick = (section) => {
     setActiveSection(section);
+    handleScrollTo(section); 
   };
 
   const handleListClick = (section) => {
     setActiveSection(section);
+    handleScrollTo(section); 
+  };
+  const handleScrollTo = (section) => {
+    const element = document.getElementById(section);
+    if (element) {
+      setTimeout(() => {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 600); // Trì hoãn một chút để đảm bảo nó cuộn đúng
+    }
   };
 
   return (
@@ -46,7 +56,7 @@ const App = () => {
       <div className="App">
         <img src={headerImage} alt="Header Background" className="header-image" title="Hình ảnh đầu trang cho web"/>
         <Header onNavClick={handleNavClick} />
-        <Sidebar />
+        <Sidebar onListClick={handleNavClick} />
         <div className="container">
           <div className="sidebar">
             <ParentList onListClick={handleListClick} />
@@ -86,11 +96,13 @@ const App = () => {
             <section id="dang-ky-lam-gia-su">
               {activeSection === 'dang-ky-lam-gia-su' && <WorkingRegister />}
             </section>
+            
           </div>
         </div>
         <Footer />
         <Zalo />
       </div>
+    
     </Router>
   );
 };

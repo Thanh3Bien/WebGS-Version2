@@ -33,6 +33,7 @@
 
 @media (max-width: 768px) {
   .carousel-container {
+    display: none;
     width: 100%; /* Đảm bảo carousel chiếm toàn bộ chiều rộng trên màn hình nhỏ */
   }
 }

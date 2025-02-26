@@ -7,7 +7,7 @@ const ExistingClass = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
     const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 6;
+    const itemsPerPage = 4;
 
     useEffect(() => {
         const fetchClassData = async () => {

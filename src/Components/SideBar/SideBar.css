@@ -36,6 +36,7 @@
 
 .custom-button-sidebar {
   display: inline-block;
+  cursor: pointer;
   padding: 10px 20px; /* Điều chỉnh kích thước nút */
   background-color: #de5207; /* Màu nền */
   color: white; /* Màu chữ */
