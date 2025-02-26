@@ -3,27 +3,24 @@ import axios from 'axios';
 import './ExistingClass.css';
 
 const ExistingClass = () => {
-    const [classData, setClassData] = useState(null);
+    const [classData, setClassData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
+    const [currentPage, setCurrentPage] = useState(1);
+    const itemsPerPage = 6;
 
     useEffect(() => {
         const fetchClassData = async () => {
-            setLoading(true); // Đặt loading về true khi bắt đầu lấy dữ liệu
+            setLoading(true);
             try {
                 const response = await axios.get('https://webgsapi.azurewebsites.net/api/Classes');
-                
-                // Kiểm tra nếu response.data là một mảng
                 if (Array.isArray(response.data) && response.data.length > 0) {
-                    setClassData(response.data[0]); // Lấy phần tử đầu tiên
+                    setClassData(response.data);
                 } else {
                     setError('Không có dữ liệu lớp học');
                 }
             } catch (err) {
-                // Ghi lại lỗi chi tiết trong console
                 console.error('Error fetching class data:', err);
-                
-                // Cập nhật thông báo lỗi
                 if (axios.isAxiosError(err)) {
                     setError(err.response?.data?.ErrorMessage || 'Có lỗi xảy ra khi tải dữ liệu');
                 } else {
@@ -37,26 +34,50 @@ const ExistingClass = () => {
         fetchClassData();
     }, []);
 
+    const indexOfLastItem = currentPage * itemsPerPage;
+    const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+    const currentItems = classData.slice(indexOfFirstItem, indexOfLastItem);
+    const totalPages = Math.ceil(classData.length / itemsPerPage);
+
+    const handleNextPage = () => {
+        if (currentPage < totalPages) {
+            setCurrentPage(currentPage + 1);
+        }
+    };
+
+    const handlePrevPage = () => {
+        if (currentPage > 1) {
+            setCurrentPage(currentPage - 1);
+        }
+    };
+
     if (loading) return <div className="loading">Đang tải...</div>;
     if (error) return <div className="error">{error}</div>;
-
-    // Kiểm tra nếu classData không phải là null
-    if (!classData) return <div className="error">Không có dữ liệu</div>;
+    if (classData.length === 0) return <div className="error">Không có dữ liệu</div>;
 
     return (
         <div className="existing-class-container">
             <div className="existing-class-title">Thông Tin Lớp Học</div>
             <ul className="class-list">
-                <li key={classData.classId}>
-                    <h2>Môn học ID: {classData.subjectId}</h2>
-                    <p>Ngày học ID: {classData.studyDayId}</p>
-                    <p>Số lượng ngày trong tuần: {classData.dayQuantityInWeek}</p>
-                    <p>Mức lương: {classData.salary.toLocaleString()} VNĐ</p>
-                    <p>Mô tả yêu cầu: {classData.requestDescription}</p>
-                    <p>Điện thoại: {classData.phone}</p>
-                    <p>Trạng thái: {classData.status}</p>
-                </li>
+                {currentItems.map((classItem) => (
+                    <li key={classItem.classId} className="class-item">
+                        <h3>ID Lớp: <strong>{classItem.classId}</strong></h3>
+                        <p><strong>Khối:</strong> {classItem.blockName}</p>
+                        <p><strong>Môn Học:</strong> {classItem.subjectName}</p>
+                        <p><strong>Ngày:</strong> {classItem.day}</p>
+                        <p><strong>Số lượng ngày trong tuần:</strong> {classItem.dayQuantityInWeek}</p>
+                        <p><strong>Mức lương:</strong> {classItem.salary.toLocaleString()} VNĐ</p>
+                        <p><strong>Mô tả yêu cầu:</strong> {classItem.requestDescription}</p>
+                        <p><strong>Điện thoại:</strong> {classItem.phone}</p>
+                        <p><strong>Trạng thái:</strong> {classItem.status}</p>
+                    </li>
+                ))}
             </ul>
+            <div className="pagination">
+                <button onClick={handlePrevPage} disabled={currentPage === 1}>Trước</button>
+                <span>{currentPage} / {totalPages}</span>
+                <button onClick={handleNextPage} disabled={currentPage === totalPages}>Sau</button>
+            </div>
         </div>
     );
 };

@@ -16,3 +16,57 @@
     border-bottom: 2px solid #007bff; /* Đường viền dưới tiêu đề */
     padding-bottom: 10px; /* Khoảng cách dưới chữ */
 }
+
+.class-list {
+    display: flex; /* Sử dụng Flexbox */
+    flex-wrap: wrap; /* Cho phép các phần tử gói lại */
+    list-style-type: none; /* Bỏ dấu đầu dòng */
+    padding: 0; /* Bỏ khoảng cách bên trong */
+    margin: 0; /* Bỏ khoảng cách bên ngoài */
+}
+
+.class-item {
+    background-color: #f9f9f9; /* Màu nền cho từng khung */
+    border: 1px solid #ddd; /* Đường viền khung */
+    border-radius: 8px; /* Bo tròn các góc */
+    padding: 15px; /* Khoảng cách bên trong khung */
+    margin: 10px; /* Khoảng cách giữa các khung */
+    width: calc(50% - 60px); /* Chiều rộng của từng khung (2 cột) */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    transition: transform 0.2s; /* Hiệu ứng chuyển động */
+}
+
+.class-item:hover {
+    transform: scale(1.02); /* Phóng to khi hover */
+}
+
+.class-item h3 {
+    color: #007bff; /* Màu sắc cho tiêu đề lớp */
+    margin: 0 0 10px; /* Khoảng cách dưới tiêu đề */
+}
+
+.class-item p {
+    margin: 5px 0; /* Khoảng cách giữa các đoạn văn */
+}
+
+.pagination {
+    display: flex;
+    justify-content: center; /* Căn giữa */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-top: 20px; /* Khoảng cách trên */
+}
+
+.pagination button {
+    padding: 10px 15px; /* Khoảng cách bên trong */
+    margin: 0 5px; /* Khoảng cách giữa các nút */
+    border: none; /* Không có đường viền */
+    border-radius: 5px; /* Bo tròn các góc */
+    background-color: #de5207; /* Màu nền */
+    color: white; /* Màu chữ */
+    cursor: pointer; /* Con trỏ chuột khi hover */
+}
+
+.pagination button:disabled {
+    background-color: #ccc; /* Màu nền khi không thể nhấn */
+    cursor: not-allowed; /* Không thể nhấn */
+}

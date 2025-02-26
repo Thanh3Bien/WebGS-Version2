@@ -1,18 +1,74 @@
 .introduce-container {
-    max-width: 800px; /* Giới hạn chiều rộng của container */
-    margin: 0 auto; 
-    padding: 20px; /* Khoảng cách bên trong */
-    font-family: Arial, sans-serif; /* Phông chữ */
-    line-height: 1.6; /* Tăng khoảng cách giữa các dòng */
-    text-align: start;
-  }
+  max-width: 800px; /* Giới hạn chiều rộng của container */
+  margin: 0 auto; 
+  padding: 20px; /* Khoảng cách bên trong */
+  font-family: Arial, sans-serif; /* Phông chữ */
+  line-height: 1.6; /* Tăng khoảng cách giữa các dòng */
+  text-align: start;
+}
+
+.introduce-title {
+  font-size: 24px; /* Kích thước chữ */
+  font-weight: bold; /* Đậm chữ */
+  text-align: center; /* Căn giữa tiêu đề */
+  color: #333; /* Màu sắc tiêu đề */
+  margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+  border-bottom: 2px solid #007bff; /* Đường viền dưới tiêu đề */
+  padding-bottom: 10px; /* Khoảng cách dưới chữ */
+
   
-  .introduce-title {
-    font-size: 24px; /* Kích thước chữ */
-    font-weight: bold; /* Đậm chữ */
-    text-align: center; /* Căn giữa tiêu đề */
-    color: #333; /* Màu sắc tiêu đề */
-    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
-    border-bottom: 2px solid #007bff; /* Đường viền dưới tiêu đề */
-    padding-bottom: 10px; /* Khoảng cách dưới chữ */
-  }
+}
+
+.tutor-list {
+  display: flex; /* Sử dụng Flexbox */
+  flex-wrap: wrap; /* Cho phép các phần tử gói lại */
+  list-style-type: none; /* Bỏ dấu đầu dòng */
+  padding: 0; /* Bỏ khoảng cách bên trong */
+  margin: 0; /* Bỏ khoảng cách bên ngoài */
+}
+
+.tutor-item {
+  background-color: #f9f9f9; /* Màu nền cho từng khung */
+  border: 1px solid #ddd; /* Đường viền khung */
+  border-radius: 8px; /* Bo tròn các góc */
+  padding: 15px; /* Khoảng cách bên trong khung */
+  margin: 10px; /* Khoảng cách giữa các khung */
+  width: calc(50% - 60px); /* Chiều rộng của từng khung (2 cột) */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+  transition: transform 0.2s; /* Hiệu ứng chuyển động */
+}
+
+.tutor-item:hover {
+  transform: scale(1.02); /* Phóng to khi hover */
+}
+
+.tutor-item h3 {
+  color: #007bff; /* Màu sắc cho tiêu đề gia sư */
+  margin: 0 0 10px; /* Khoảng cách dưới tiêu đề */
+}
+
+.tutor-item p {
+  margin: 5px 0; /* Khoảng cách giữa các đoạn văn */
+}
+
+.pagination {
+  display: flex;
+  justify-content: center; /* Căn giữa */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  margin-top: 20px; /* Khoảng cách trên */
+}
+
+.pagination button {
+  padding: 10px 15px; /* Khoảng cách bên trong */
+  margin: 0 5px; /* Khoảng cách giữa các nút */
+  border: none; /* Không có đường viền */
+  border-radius: 5px; /* Bo tròn các góc */
+  background-color: #de5207; /* Màu nền */
+  color: white; /* Màu chữ */
+  cursor: pointer; /* Con trỏ chuột khi hover */
+}
+
+.pagination button:disabled {
+  background-color: #ccc; /* Màu nền khi không thể nhấn */
+  cursor: not-allowed; /* Không thể nhấn */
+}
