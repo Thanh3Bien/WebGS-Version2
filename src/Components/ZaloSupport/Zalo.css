@@ -23,8 +23,8 @@
   
   .zalo-icon {
     position: fixed;
-    bottom: 150px;
-    left: 30px;
+    bottom: 120px;
+    right: 30px;
     display: flex;
     align-items: center;
     z-index: 1000;

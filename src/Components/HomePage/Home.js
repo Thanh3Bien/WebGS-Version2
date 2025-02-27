@@ -65,7 +65,7 @@ const Home = () => {
         Điện thoại: 0393.687.033 (24/7)
       </p>
       <p className="contact-info">
-        Website: <a href="http://giasutainang.edu.vn/">http://giasutainang.edu.vn/</a>
+        Website: <a href="http://giasutamtin.edu.vn/">http://giasutamtin.edu.vn/</a>
       </p>
     </div>
   );

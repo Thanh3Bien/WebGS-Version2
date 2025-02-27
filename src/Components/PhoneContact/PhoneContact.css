@@ -23,8 +23,8 @@
 
 .phone-icon {
     position: fixed;
-    bottom: 230px; /* Điều chỉnh vị trí nếu cần */
-    left: 30px;
+    bottom: 200px; /* Điều chỉnh vị trí nếu cần */
+    right: 30px;
     display: flex;
     align-items: center;
     z-index: 1000;
