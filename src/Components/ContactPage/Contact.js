@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Contact.css'
 
 const Contact = () => {
+
+  useEffect(() => {
+    // Gọi mã sự kiện cho lượt chuyển đổi
+    window.gtag('event', 'conversion', {
+      'send_to': 'AW-16929111199/0vXrCKq_sKoaEJ_5tog_',
+      'value': 1.0,
+      'currency': 'VND',
+    });
+  }, []);
   return (
     
     <div className="contact-container">
